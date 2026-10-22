@@ -169,7 +169,7 @@ export function createApp({dataDir=path.join(root,'data'),provider=new DemoProvi
  return {server,store,learning};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- const port=Number(process.env.PORT||4185),assetsDir=path.join(root,'web','assets','generated');
+ const port=Number(process.env.PORT||4186),assetsDir=path.join(root,'web','assets','generated');
  const provider=new VisualProvider({planner:new DeepSeekPlanner(),imageService:new QwenImageService({assetsDir,referencePath:path.join(root,'web','assets','offline','wet-hands.png')}),cacheDir:path.join(root,'data','visual-cache'),assetsRoot:path.join(root,'web')});
  createApp({provider,generationEnabled:process.env.ENABLE_LIVE_GENERATION==='1',majorBank:new MajorBank(defaultBankPath(root))}).server.listen(port,'127.0.0.1',()=>console.log('知安 http://127.0.0.1:'+port));
 }

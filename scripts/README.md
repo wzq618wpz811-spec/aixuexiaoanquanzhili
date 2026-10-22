@@ -27,3 +27,5 @@
 常规验证使用根README的npm命令。维护脚本不属于测试步骤。缺少原始输入时先恢复并核对哈希；不要直接执行覆盖性构建来修复测试。
 `verify/verify-offline-browser.mjs` 另验证正式题不会出现在待审核列表；八类样题作为独立参考页另行检查，不再嵌入审核发布。
 `verify/verify-browser.mjs` 会先核验“导入并生成”自动进入审核发布，再转到题库继续原有交互回归。
+
+- `verify/verify-small-course-browser.mjs`：临时数据库验证空意见发布，以及新专业发布1、2道题后立即练习；不调用模型、不写入正式数据库。

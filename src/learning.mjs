@@ -40,9 +40,9 @@ export class Learning {
   if(wrongOnly){const last=new Map();for(const r of this.list(owner).filter(r=>r.status==='submitted'))for(const a of r.results)if(!last.has(a.questionId))last.set(a.questionId,a.correct);cards=cards.filter(q=>last.get(q.id)===false);}
   if(Array.isArray(ids))cards=cards.filter(q=>ids.includes(q.id));
   if(major)for(let i=cards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[cards[i],cards[j]]=[cards[j],cards[i]];}
-  if(major&&!wrongOnly&&cards.length<10)throw new Error('本专业正式题库暂未准备好，满10道可用题后即可开始练习');
-  if(major&&!wrongOnly){const recent=this.list(owner).slice(0,2).flatMap(r=>r.cards.map(knowledgeKey));cards=diverseSample(cards,settings.batchSize,{recent});}
+  if(major&&!wrongOnly&&cards.length>settings.batchSize){const recent=this.list(owner).slice(0,2).flatMap(r=>r.cards.map(knowledgeKey));cards=diverseSample(cards,settings.batchSize,{recent,fillRemaining:true});}
   else cards=cards.slice(0,settings.batchSize);if(!cards.length)throw new Error(wrongOnly?'暂无错题':'暂无可学习卡片');
+  if(major)settings.batchSize=cards.length;
   cards=structuredClone(cards);for(const q of cards)if(q.candidate.route==='R8'){const c=q.candidate,order=c.options.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}const old=c.options;c.options=order.map(i=>old[i]);c.answer=c.answer.map(i=>order.indexOf(i));}
   const r={id:randomUUID(),owner,status:'active',settings,cards,selections:{},results:[],createdAt:new Date().toISOString()};this.save(r);return this.view(r);
  }

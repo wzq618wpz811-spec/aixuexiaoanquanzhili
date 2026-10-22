@@ -52,7 +52,7 @@ test('学生选专业、生成、教师审核、再练习的接口闭环',async(
   const approved=await call('teacher','questions/'+q.id+'/review',{action:'approve',note:'已核对画面与依据',stem:q.candidate.stem,answer:'1',explanation:'湿手不得接触电源。',sourceUrl:'https://example.org/safety'},tc);
   assert.equal(approved.data.status,'published');
   const home=await call('student','home',undefined,sc);assert.equal(home.data.available,1);
-  const run=await call('student','runs',{},sc);assert.equal(run.res.status,409,'正式题不足10道时不开放学生练习');
+  const run=await call('student','runs',{},sc);assert.equal(run.res.status,201);assert.equal(run.data.cards.length,1);assert.equal(run.data.cards[0].id,q.id);assert.equal(run.data.settings.batchSize,1);
  }finally{await new Promise(r=>app.server.close(r));app.store.db.close();rmSync(dir,{recursive:true,force:true});}
 });
 

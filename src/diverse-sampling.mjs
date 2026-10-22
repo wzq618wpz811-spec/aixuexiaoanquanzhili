@@ -1,7 +1,7 @@
 import {visualKeys} from './visual-identity.mjs';
 export const knowledgeKey=q=>q.candidate.knowledgePointId||q.source.knowledgePointId||q.source.sourceQuestionId||q.id;
 const domainKey=q=>q.candidate.knowledgeDomain||((q.candidate.knowledgePointId||q.source.knowledgePointId)?q.source.topic:knowledgeKey(q));
-export function diverseSample(cards,count,{recent=[],random=Math.random}={}){
+export function diverseSample(cards,count,{recent=[],random=Math.random,fillRemaining=false}={}){
  const history=new Map();for(const [index,key] of recent.entries())if(!history.has(key))history.set(key,index);
  const candidates=cards.map(q=>({q,key:knowledgeKey(q),visuals:visualKeys(q),tie:random()}));
  const selected=[],points=new Set(),images=new Set(),domains=new Map(),routes=new Set();
@@ -24,6 +24,9 @@ export function diverseSample(cards,count,{recent=[],random=Math.random}={}){
  // A domain can contain several genuinely different points; only relax its cap.
  // Never repeat a knowledge point or let the old single-task group exceed two.
  while(selected.length<count&&take({maxDomain:3,preferRoutes:true})){}
+ // A demo pool can contain distinct questions sharing a concept or picture.
+ // Practice still fills its requested size when the caller explicitly allows it.
+ if(fillRemaining&&selected.length<count){const ids=new Set(selected.map(q=>q.id));for(const {q} of candidates){if(selected.length>=count)break;if(!ids.has(q.id)){selected.push(q);ids.add(q.id);}}}
  if(selected.length<count)throw new Error('本专业尚未备齐10道考点与配图均不重复的正式题，请教师补充对应素材后再开始');
  for(let i=selected.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[selected[i],selected[j]]=[selected[j],selected[i]];}
  return selected;

@@ -64,15 +64,15 @@ test('separate role APIs and no legacy answer endpoint',async()=>{const dir=temp
 });
 
 
-test('manual review can publish without entering a URL and preserves existing sources',async()=>{const x=await seeded();try{
+test('manual review can publish without URL or comments and preserves existing sources',async()=>{const x=await seeded();try{
  for(const keepSource of [true,false]){
   let q=x.store.all().find(q=>q.status==='published'&&q.candidate.type!=='order');
   const expected=keepSource?q.candidate.sourceUrl:'';
   if(!keepSource){q.source.sourceUrl='';q.candidate.sourceUrl='';x.store.save(q);}
   q=x.store.withdraw(q.id);
-  const body={version:q.version,stem:q.candidate.stem,options:q.candidate.options.map(o=>o.text),answer:JSON.stringify(q.candidate.answer),explanation:q.candidate.explanation,note:'人工核对题干、选项和答案'};
+  const body={version:q.version,stem:q.candidate.stem,options:q.candidate.options.map(o=>o.text),answer:JSON.stringify(q.candidate.answer),explanation:q.candidate.explanation};
   q=x.store.saveDraft(q.id,body);assert.equal(q.candidate.sourceUrl,expected);
   q=x.store.review(q.id,{...body,action:'approve'});
-  assert.equal(q.status,'published');assert.equal(q.candidate.sourceUrl,expected);
+  assert.equal(q.status,'published');assert.equal(q.candidate.sourceUrl,expected);assert.equal(q.history.at(-1).note,'');
  }
 }finally{x.close();}});

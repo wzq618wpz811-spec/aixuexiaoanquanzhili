@@ -144,11 +144,11 @@ export function createApp({dataDir=path.join(root,'data'),provider=new DemoProvi
      if(route==='/characters/views'&&req.method==='POST')return json(res,200,await provider.characterViews((await body(req)).characterId));
      if(route==='/characters/replace'&&req.method==='POST')return json(res,200,await provider.replaceActor(await body(req)));
     }else{
-     if(route==='/home'&&req.method==='GET'){const cards=learning.cards(user.major).filter(q=>!user.major||usable(q)),profile=taskProfiles.get(user.major),relevance=majorRelevance.get(user.major);return json(res,200,{available:cards.length,coverage:new Set(cards.map(q=>q.candidate.route).filter(Boolean)).size,curriculum:profile&&relevance?{...profile,family:relevance.family}:null,settings:{...learning.settings(),...(user.major?{batchSize:10}:{})},character:learning.characters().find(c=>c.id===learning.settings().characterId),runs:learning.summary(user.username,user.major),username:user.username,major:user.major||''});}
+     if(route==='/home'&&req.method==='GET'){const cards=learning.cards(user.major).filter(q=>!user.major||usable(q)),profile=taskProfiles.get(user.major),relevance=majorRelevance.get(user.major);return json(res,200,{available:cards.length,coverage:new Set(cards.map(q=>q.candidate.route).filter(Boolean)).size,curriculum:profile&&relevance?{...profile,family:relevance.family}:null,settings:{...learning.settings(),...(user.major?{batchSize:Math.min(10,cards.length)}:{})},character:learning.characters().find(c=>c.id===learning.settings().characterId),runs:learning.summary(user.username,user.major),username:user.username,major:user.major||''});}
      if(route==='/prepare'&&req.method==='POST')return json(res,403,{error:'学生端不生成或审核新题，请从已开放的正式题库开始练习'});
      if(route==='/runs'&&req.method==='POST'){const b=await body(req);
       const cards=learning.cards(user.major).filter(q=>!user.major||usable(q));
-      if(user.major&&!b.wrongOnly&&cards.length<10)return json(res,409,{error:'本专业正式题库暂未准备好，满10道可用题后即可开始练习'});
+      if(user.major&&!b.wrongOnly&&!cards.length)return json(res,409,{error:'本专业暂无已发布的可用题目，请教师发布后再开始练习'});
       return json(res,201,learning.start(user.username,{wrongOnly:!!b.wrongOnly,ids:cards.map(q=>q.id),major:user.major||''}));}
      const run=route.match(/^\/runs\/([^/]+)$/),selection=route.match(/^\/runs\/([^/]+)\/selection$/),submit=route.match(/^\/runs\/([^/]+)\/submit$/);
      if((run||selection||submit)&&user.major){const existing=learning.get((run||selection||submit)[1],user.username);if(existing.cards.some(q=>q.source.majorName!==user.major))return json(res,403,{error:'此记录不属于当前选择的专业，请切换专业后查看'});}

@@ -86,7 +86,7 @@ export class Store {
   }
   review(id,body){const q=this.get(id);if(!q?.candidate)throw new Error('题目尚未生成');
     if(!['review','rejected'].includes(q.status))throw new Error('当前题目不在待审核状态');
-    if(!String(body.note??'').trim())throw new Error('请填写处理说明');
+    if(body.action==='reject'&&!String(body.note??'').trim())throw new Error('请填写处理说明');
     if(body.action==='approve'){
       if(!visualTypes.includes(q.candidate.type)||!q.candidate.visual)throw new Error('请先补齐视觉卡片，纯文字题不可发布');
       if(q.candidate.type==='order'&&body.confirmSequence===true){
@@ -99,7 +99,7 @@ export class Store {
       if(!String(body.stem??'').trim()||!String(body.explanation??'').trim())throw new Error('请补充题干与解析');
       q.version++;q.candidate.stem=String(body.stem).slice(0,3000);q.candidate.answer=answer;q.candidate.explanation=String(body.explanation).slice(0,5000);
       q.candidate.sourceUrl=String(body.sourceUrl??q.candidate.sourceUrl??q.source.sourceUrl??'');q.candidate.issues=[];q.status='published';
-      q.history.push({at:new Date().toISOString(),event:'人工修订后通过',note:String(body.note).slice(0,3000),version:q.version});
+      q.history.push({at:new Date().toISOString(),event:'人工修订后通过',note:String(body.note??'').slice(0,3000),version:q.version});
     }else if(body.action==='reject'){q.status='rejected';q.history.push({at:new Date().toISOString(),event:'退回',note:String(body.note).slice(0,3000),version:q.version});}
     else throw new Error('不支持的审核操作');
     this.save(q);this.snapshot(q);return q;

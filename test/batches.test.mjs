@@ -15,7 +15,7 @@ async function setup(provider,pick){const dir=mkdtempSync(path.join(tmpdir(),'zh
  const approve=q=>app.store.review(q.id,{action:'approve',note:'临时测试：已核对图像和答案',stem:q.candidate.stem,answer:'0',explanation:'测试解释',sourceUrl:'https://example.org/test'});
  return {app,request,call,finish,approve,close:async()=>{await new Promise(r=>app.server.close(r));app.store.close();rmSync(dir,{recursive:true,force:true});}};
 }
-test('学生仅抽10道正式题；未审题不能凑数；刷新和作答不调用AI',async()=>{
+test('学生最多抽10道正式题，少于10道可练习，未审题不参与且学生不调用AI',async()=>{
  let generated=0;const x=await setup({generate:async q=>{generated++;return candidate(q)}},(_major,count)=>{assert.equal(count,10);return Array.from({length:10},(_,i)=>fixture(i))});
  try{
   assert.equal((await x.request('student','prepare',{})).status,403);
@@ -24,14 +24,14 @@ test('学生仅抽10道正式题；未审题不能凑数；刷新和作答不调
   assert.equal(x.app.store.stats().published,0);
   assert.equal((await x.request('student','runs',{preview:true})).status,409);
   for(const q of x.app.store.all().slice(0,9))x.approve(q);
-  assert.equal((await x.request('student','runs',{})).status,409);
+  const small=await x.call('student','runs',{});assert.equal(small.cards.length,9);assert.equal(small.settings.batchSize,9);assert.ok(small.cards.every(c=>x.app.store.get(c.id).status==='published'));
   x.approve(x.app.store.all().find(q=>q.status==='review'));
   const run=await x.call('student','runs',{preview:true,ids:['unapproved']});assert.equal(run.cards.length,10);assert.equal(run.settings.batchSize,10);assert.ok(!('preview'in run));assert.ok(run.cards.every(c=>!('reviewIssues'in c)&&!('answer'in c)));
   for(const q of run.cards)await x.call('student','runs/'+run.id+'/selection',{questionId:q.id,selection:0});
   await x.call('student','runs/'+run.id+'/submit',{});assert.equal(x.app.store.stats().attempts,10);
   for(let i=0;i<3;i++)await x.call('student','home');assert.equal(generated,10);
   const reused=await x.call('teacher','prepare-major',{major:'工商管理',retryBatchId:batch.id});assert.equal(reused.reused,10);assert.equal(generated,10);
-  x.app.store.withdraw(run.cards[0].id);assert.equal((await x.request('student','runs',{})).status,409);
+  x.app.store.withdraw(run.cards[0].id);const afterWithdraw=await x.call('student','runs',{});assert.equal(afterWithdraw.cards.length,9);assert.ok(afterWithdraw.cards.every(c=>c.id!==run.cards[0].id));
  }finally{await x.close();}
 });
 test('教师批次额度不足时只尝试一道便暂停，重试不重新抽题',async()=>{
@@ -58,5 +58,31 @@ test('导入即登记新专业，只有审核发布的题可学，不能伪造�
   assert.equal((await x.request('student','runs',{major:'数字经济'})).status,409);
   assert.equal((await x.request('student','login',{username:'student01',password:'123456',major:'数字经济'})).status,200);
   assert.equal(x.app.learning.start('digital-student',{major:'数字经济'}).cards.length,10);
+ }finally{await x.close();}
+});
+
+test('新专业发布后立即可练习：1、2、9、10、11、12道分别抽1、2、9、10、10、10道，发布意见选填',async()=>{
+ let generated=0;const x=await setup({generate:async q=>{generated++;const c=candidate(q);return q.majorName==='演示课程12'?{...c,knowledgePointId:'共享演示考点',visual:{kind:'generated',image:'assets/blank-book.png'}}:c}},()=>[]);
+ try{
+  for(const count of [1,2,9,10,11,12]){
+   const major='演示课程'+count;
+   const imported=await x.call('teacher','import',{major,text:JSON.stringify(Array.from({length:count},(_,i)=>({...fixture(i),stem:major+'第'+i+'题'})))});
+   await x.call('teacher','generate',{ids:imported.ids});await x.finish();
+   await x.call('student','login',{username:'student01',password:'123456',major});
+   assert.equal((await x.call('student','home')).available,0);assert.equal((await x.request('student','runs',{})).status,409);
+   for(const [i,id] of imported.ids.entries()){
+    let q=x.app.store.get(id);
+    if(i===0){const rejected=await x.request('teacher','questions/'+id+'/review',{action:'reject'});assert.ok(rejected.status>=400);assert.match(rejected.data.error,/处理说明/);}
+    q=await x.call('teacher','questions/'+id+'/draft',{version:q.version,stem:q.candidate.stem,options:q.candidate.options.map(o=>o.text),answer:'0',explanation:'教师已核对解析'});
+    const approved=await x.call('teacher','questions/'+id+'/review',{action:'approve',stem:q.candidate.stem,answer:'0',explanation:q.candidate.explanation});
+    assert.equal(approved.status,'published');assert.equal(approved.history.at(-1).note,'');
+    if(i===0){const immediate=await x.call('student','runs',{});assert.equal(immediate.cards.length,1);assert.equal(immediate.cards[0].id,id);}
+   }
+   const expected=Math.min(count,10),home=await x.call('student','home');assert.equal(home.available,count);assert.equal(home.settings.batchSize,expected);
+   const run=await x.call('student','runs',{});assert.equal(run.cards.length,expected);assert.equal(run.settings.batchSize,expected);assert.equal(new Set(run.cards.map(q=>q.id)).size,expected);assert.ok(run.cards.every(q=>imported.ids.includes(q.id)));
+   for(const q of run.cards)await x.call('student','runs/'+run.id+'/selection',{questionId:q.id,selection:0});
+   const submitted=await x.call('student','runs/'+run.id+'/submit',{});assert.equal(submitted.results.length,expected);assert.ok(submitted.results.every(r=>r.correct));
+  }
+  assert.equal(generated,45,'学生练习不触发额外在线生成');
  }finally{await x.close();}
 });

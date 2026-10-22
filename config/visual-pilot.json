@@ -1,0 +1,1780 @@
+{
+  "schema_version": 2,
+  "batch": "visual-pilot-2026-10-10-v2",
+  "production_status": "research_only",
+  "method": "真实原题人工改编＋内置imagegen预生成观察素材＋规则检查；必要背景在题干，制作说明仅教师可见；未接入应用在线AI",
+  "cards": [
+    {
+      "id": "vp01",
+      "version": 2,
+      "title": "作业手套与电话",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:434",
+      "source_type": "判断题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D434:F434",
+      "source_number": "433",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T01",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "实验还没结束，小安戴着本次实验使用的手套接电话。这样做可以吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "实验作业手套不应接触电话这类清洁表面，应按实验室要求脱下或更换后再接听。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/scene-01.png",
+        "alt": "实验台旁，戴蓝色手套的手握电话听筒贴近耳部"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "当前实验尚未结束；角色仍戴着本次实验作业手套。",
+          "provenance": "原题正在进行实验与防护手套条件的明示",
+          "placement": "stem",
+          "student_text": "实验还没结束，小安戴着本次实验使用的手套"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "手套与电话听筒直接接触",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "作业手套仍未更换",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "上海科技大学免疫化学研究所实验室安全管理规范",
+          "url": "https://siais.shanghaitech.edu.cn/_upload/article/files/32/4e/eb1ca7f64eee9df4b45cf92e7c2e/d8c28874-3dc7-4c60-a80c-53dc89218bbc.pdf",
+          "locator": "2020年11月修订，个人防护用品章，3.7手部防护第6项",
+          "supports": "避免作业手套接触电话、电脑等清洁表面；任务防护按风险选择",
+          "id": "gloves",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [
+        {
+          "id": "contact",
+          "box": [
+            0.2,
+            0.31,
+            0.18,
+            0.29
+          ]
+        }
+      ],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp02",
+      "version": 2,
+      "title": "作业手套与电脑",
+      "cohort": "calibration",
+      "source_ref": "TSU200:80",
+      "source_type": "判断题",
+      "source_locator": "文本序位80 / 印刷题号80",
+      "source_number": "80",
+      "source_url": "https://chem.tsu.edu.cn/2019/0622/c445a48906/page.htm",
+      "source_archive_sha256": "e102e316cd5fc7b798698f5ed51c1bf216e464f9f529cb9425371a18bd7bd3b8",
+      "template": "T01",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "小安刚做完实验，没换手套就操作共用电脑。这样做符合要求吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "实验作业手套不用于接触共用电脑等清洁表面。原题是禁止跨区接触的判断命题，此处改为判断画面行为，正误方向反转并独立保存。"
+      },
+      "answer_mapping": {
+        "mode": "proposition_reversal",
+        "source_to_adapted": [
+          1,
+          0
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/scene-02.png",
+        "alt": "戴手套的食指按在共用电脑键盘上"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "角色刚在实验区作业，尚未更换该作业手套；电脑为共用电脑。",
+          "provenance": "为原题实验防护手套与电脑对象补明语义，不猜污染性质",
+          "placement": "stem",
+          "student_text": "小安刚做完实验，没换手套就操作共用电脑"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "手套食指与键盘按键接触",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "实验作业手套未经更换",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "上海科技大学免疫化学研究所实验室安全管理规范",
+          "url": "https://siais.shanghaitech.edu.cn/_upload/article/files/32/4e/eb1ca7f64eee9df4b45cf92e7c2e/d8c28874-3dc7-4c60-a80c-53dc89218bbc.pdf",
+          "locator": "2020年11月修订，个人防护用品章，3.7手部防护第6项",
+          "supports": "避免作业手套接触电话、电脑等清洁表面；任务防护按风险选择",
+          "id": "gloves",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [
+        {
+          "id": "contact",
+          "box": [
+            0.49,
+            0.66,
+            0.13,
+            0.23
+          ]
+        }
+      ],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp03",
+      "version": 2,
+      "title": "空房间与充电",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:432",
+      "source_type": "判断题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D432:F432",
+      "source_number": "431",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T01",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "即使实验室空余位置很多，也可以把电动自行车放在室内充电。这个说法对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "较大空余空间不能替代对充电场所的管理要求；图示不推断负荷、电池质量或事故必然发生。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/lab-ebike-v2.png",
+        "alt": "实验室内，电动自行车通过充电器连接墙面插座"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "本图为实验室室内；只考充电场所，不表示电池类型或电气负荷。",
+          "provenance": "原题实验室与空间较大条件",
+          "placement": "stem",
+          "student_text": "实验室"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "车辆、充电器与插座的完整连接关系",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "本图为实验室室内；只考充电场所，不表示电池类型或电气负荷。",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "中山大学生命科学学院：严禁电动自行车及电瓶进入实验室充电的通知",
+          "url": "https://lifesciences.sysu.edu.cn/zh-hans/node/4358",
+          "locator": "网页2020-09-03；通知署期2020-08-31，实验室与工作室充电要求",
+          "supports": "实验室及工作室不得为电动车与电池充电；跨校正式采用仍核验本校现行规则",
+          "id": "ebike",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp04",
+      "version": 2,
+      "title": "铁屑清理的三种动作",
+      "cohort": "calibration",
+      "source_ref": "QCU-M:18",
+      "source_type": "单选",
+      "source_locator": "文本序位18 / 印刷题号18",
+      "source_number": "18",
+      "source_url": "https://lab.qcuwh.edu.cn/info/1004/1736.htm",
+      "source_archive_sha256": "b19e1e1b850db7112d78a9385659c047787114f786f246dde9c35fe246b5c413",
+      "template": "T02",
+      "template_version": "0.3",
+      "interaction": "single",
+      "adapted": {
+        "stem": "清理工作台面上的铁屑，应采用哪种方法？",
+        "options": [
+          "用工具清扫",
+          "戴手套用手清理",
+          "用嘴吹"
+        ],
+        "answer": 0,
+        "explanation": "使用合适工具清理；戴手套直接捡拾和用嘴吹都不能替代工具清扫。图像只用于识别动作，不能作为机床操作规程。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1,
+          2
+        ]
+      },
+      "visual": {
+        "kind": "paired",
+        "images": [
+          "assets/visual-pilot/scene-03.png",
+          "assets/visual-pilot/scene-04.png",
+          "assets/visual-pilot/scene-05.png"
+        ],
+        "alts": [
+          "用刷子接触并清理台面铁屑",
+          "戴手套的手直接聚拢铁屑",
+          "嘴部朝向铁屑吹气"
+        ]
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "仅比较台面铁屑清理方式，图中没有正在运行的机床。",
+          "provenance": "缩小画面到原题工作台面，避免增加设备运行状态",
+          "placement": "teacher_note"
+        }
+      ],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "工具接触铁屑且手与铁屑分离",
+          "carrier": "option:0",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "手套直接接触铁屑",
+          "carrier": "option:1",
+          "required": true
+        },
+        {
+          "id": "E3",
+          "fact": "嘴部与铁屑方向形成吹气动作",
+          "carrier": "option:2",
+          "required": true
+        },
+        {
+          "id": "E4",
+          "fact": "同一工作台和铁屑对象",
+          "carrier": "group",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "天津城建大学钳工安全操作规程",
+          "url": "https://cetc.tcu.edu.cn/info/1264/1331.htm",
+          "locator": "第4项",
+          "supports": "铁屑清除使用工具，不直接手拿或用嘴吹",
+          "id": "workshop",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [
+        {
+          "id": "contact",
+          "box": [
+            0.31,
+            0.5,
+            0.37,
+            0.39
+          ]
+        }
+      ],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp05",
+      "version": 2,
+      "title": "插座周边",
+      "cohort": "calibration",
+      "source_ref": "TSU200:17",
+      "source_type": "判断题",
+      "source_locator": "文本序位17 / 印刷题号17",
+      "source_number": "17",
+      "source_url": "https://chem.tsu.edu.cn/2019/0622/c445a48906/page.htm",
+      "source_archive_sha256": "e102e316cd5fc7b798698f5ed51c1bf216e464f9f529cb9425371a18bd7bd3b8",
+      "template": "T04",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "图中纸箱和纸张紧靠墙面插座堆放。这种摆放是否符合要求？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "电气设施周边不应堆放可燃杂物；本题判断位置关系，不从图中比例计算安全距离。"
+      },
+      "answer_mapping": {
+        "mode": "proposition_reversal",
+        "source_to_adapted": [
+          1,
+          0
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/socket-clutter-v2.png",
+        "alt": "墙面插座紧邻堆放的纸箱和纸张"
+      },
+      "conditions": [],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "插座与纸制物品的位置关系",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "上海科技大学实验室消防管理规范",
+          "url": "https://ehs.shanghaitech.edu.cn/xfaq/list.htm",
+          "locator": "4.1、4.2、4.3",
+          "supports": "电气周边与可燃物、通道管理、操作规程、禁止擅离、必要电源例外",
+          "id": "fire",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp06",
+      "version": 2,
+      "title": "走廊旁的杂物",
+      "cohort": "calibration",
+      "source_ref": "TSU200:57",
+      "source_type": "判断题",
+      "source_locator": "文本序位57 / 印刷题号57",
+      "source_number": "57",
+      "source_url": "https://chem.tsu.edu.cn/2019/0622/c445a48906/page.htm",
+      "source_archive_sha256": "e102e316cd5fc7b798698f5ed51c1bf216e464f9f529cb9425371a18bd7bd3b8",
+      "template": "T04",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "实验室走廊里，如图这样堆放杂物，只要还能走过去就符合要求。对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "源题条件下，仍能通行不能作为自行堆物的理由；不同场地的特殊审批安排须另行核验，本图不能证明实际净宽。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/corridor-clutter-v2.png",
+        "alt": "实验室走廊一侧堆有箱物，另一侧仍有可走区域"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "采用本题来源场地的走廊管理规则，不包括另行审批的特殊场地安排。",
+          "provenance": "源题学校范围明示；不同学校可能有审批例外",
+          "placement": "teacher_note"
+        }
+      ],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "箱物占用走廊一侧，另一侧仍留有通行区域",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "上海科技大学实验室消防管理规范",
+          "url": "https://ehs.shanghaitech.edu.cn/xfaq/list.htm",
+          "locator": "4.1、4.2、4.3",
+          "supports": "电气周边与可燃物、通道管理、操作规程、禁止擅离、必要电源例外",
+          "id": "fire",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp07",
+      "version": 2,
+      "title": "逃生通道",
+      "cohort": "calibration",
+      "source_ref": "TSU200:76",
+      "source_type": "判断题",
+      "source_locator": "文本序位76 / 印刷题号76",
+      "source_number": "76",
+      "source_url": "https://chem.tsu.edu.cn/2019/0622/c445a48906/page.htm",
+      "source_archive_sha256": "e102e316cd5fc7b798698f5ed51c1bf216e464f9f529cb9425371a18bd7bd3b8",
+      "template": "T04",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "图示逃生通道的出口处被箱物挡住。这种状态符合通道要求吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "逃生通道应保持畅通。这里只判断图示阻挡关系，不把教学平面图当现场疏散图。"
+      },
+      "answer_mapping": {
+        "mode": "proposition_reversal",
+        "source_to_adapted": [
+          1,
+          0
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/exit-clutter-v2.png",
+        "alt": "安全出口前的通行区域被箱物横向挡住"
+      },
+      "conditions": [],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "箱物挡住出口前的通行路径",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "门上方可见安全出口文字",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "上海科技大学实验室消防管理规范",
+          "url": "https://ehs.shanghaitech.edu.cn/xfaq/list.htm",
+          "locator": "4.1、4.2、4.3",
+          "supports": "电气周边与可燃物、通道管理、操作规程、禁止擅离、必要电源例外",
+          "id": "fire",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp08",
+      "version": 2,
+      "title": "入室准备是清单",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:425",
+      "source_type": "多选题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D425:F425",
+      "source_number": "424",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T05",
+      "template_version": "0.3",
+      "interaction": "multi",
+      "adapted": {
+        "stem": "准备开展一项实验，应按本次任务要求完成哪些入室准备？请选择所有符合项。",
+        "options": [
+          "了解实验内容和安全操作规程",
+          "穿着合适的实验服和鞋子",
+          "检查个人防护用品是否齐全",
+          "携带食品等个人物品进入实验室食用"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ],
+        "explanation": "了解任务规程、穿着合适衣鞋并检查所需防护用品是独立准备项；食品不能带入实验室食用。这是多选清单，不具有题目规定的唯一先后顺序。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/lab-preparation-v2.png",
+        "alt": "规程册、衣鞋、防护用品与食品分开放置"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "具体防护服、鞋与个人防护用品按本次任务要求选择，不固定为一套通用装备。",
+          "provenance": "原选项合适与齐全，结合任务防护依据",
+          "placement": "stem",
+          "student_text": "按本次任务要求"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "任务规程、衣鞋、防护用品与食品四组候选物品",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "具体防护服、鞋与个人防护用品按本次任务要求选择，不固定为一套通用装备。",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "苏州科技大学材料科学与工程学院实验室安全管理规范",
+          "url": "https://clxy.usts.edu.cn/info/1088/1716.htm",
+          "locator": "2022-11-07，第一、二、五、八、十条",
+          "supports": "标签清晰、任务防护、禁止饮食、责任信息、废弃物分类与委托处置",
+          "id": "lab",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp09",
+      "version": 2,
+      "title": "实验行为边界",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:455",
+      "source_type": "多选题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D455:F455",
+      "source_number": "454",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T05",
+      "template_version": "0.3",
+      "interaction": "multi",
+      "adapted": {
+        "stem": "在实验过程中，哪些行为属于禁止行为？请选择所有符合项。",
+        "options": [
+          "如实记录实验数据",
+          "实验时饮食、吸烟",
+          "擅自更改实验步骤",
+          "实验期间擅自离开岗位"
+        ],
+        "answer": [
+          1,
+          2,
+          3
+        ],
+        "explanation": "禁止饮食吸烟、擅自修改步骤和擅自离岗；如实记录数据不是禁止行为。多个正确选项分别保留。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/lab-conduct-v2.png",
+        "alt": "四个实验情境：写记录、饮食、改步骤、离开岗位"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "按原题考查“擅自修改”和“擅自离岗”，不把批准调整等同于擅自行为。",
+          "provenance": "原题擅自限定词",
+          "placement": "options",
+          "student_text": "擅自"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "记录数据、饮食、改步骤与离开岗位四类行为",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "按原题考查“擅自修改”和“擅自离岗”，不把批准调整等同于擅自行为。",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "苏州科技大学材料科学与工程学院实验室安全管理规范",
+          "url": "https://clxy.usts.edu.cn/info/1088/1716.htm",
+          "locator": "2022-11-07，第一、二、五、八、十条",
+          "supports": "标签清晰、任务防护、禁止饮食、责任信息、废弃物分类与委托处置",
+          "id": "lab",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        },
+        {
+          "title": "上海科技大学实验室消防管理规范",
+          "url": "https://ehs.shanghaitech.edu.cn/xfaq/list.htm",
+          "locator": "4.1、4.2、4.3",
+          "supports": "电气周边与可燃物、通道管理、操作规程、禁止擅离、必要电源例外",
+          "id": "fire",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp10",
+      "version": 2,
+      "title": "模糊标签",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:463",
+      "source_type": "判断题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D463:F463",
+      "source_number": "462",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T07",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "排查易燃液体试剂时发现了图中这瓶。凭经验猜出它是什么，就可以继续使用。对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "无法确认名称的试剂不能凭经验继续使用，应依管理要求核查和处理。演示瓶不呈现液体颜色、气味或虚构成分。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/damaged-label-v2.png",
+        "alt": "封闭棕色玻璃瓶，瓶身纸标签严重磨损，字迹不可辨认",
+        "focus": [
+          0.26,
+          0.01,
+          0.48,
+          0.98
+        ]
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "本题已知排查对象为易燃液体试剂瓶，但标签中的具体名称无法辨认。",
+          "provenance": "源题易燃液体条件；不能从瓶色猜性质",
+          "placement": "stem",
+          "student_text": "易燃液体试剂"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "瓶身名称字迹被实际磨损，无法辨认",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "本题已知排查对象为易燃液体试剂瓶，但标签中的具体名称无法辨认。",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "苏州科技大学材料科学与工程学院实验室安全管理规范",
+          "url": "https://clxy.usts.edu.cn/info/1088/1716.htm",
+          "locator": "2022-11-07，第一、二、五、八、十条",
+          "supports": "标签清晰、任务防护、禁止饮食、责任信息、废弃物分类与委托处置",
+          "id": "lab",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp11",
+      "version": 2,
+      "title": "责任门牌",
+      "cohort": "calibration",
+      "source_ref": "TSU200:70",
+      "source_type": "判断题",
+      "source_locator": "文本序位70 / 印刷题号70",
+      "source_number": "70",
+      "source_url": "https://chem.tsu.edu.cn/2019/0622/c445a48906/page.htm",
+      "source_archive_sha256": "e102e316cd5fc7b798698f5ed51c1bf216e464f9f529cb9425371a18bd7bd3b8",
+      "template": "T07",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "实验室门口的责任信息牌应显示安全责任人的姓名和联系方式。对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 0,
+        "explanation": "责任信息应可查询并保持有效。样例只考字段作用，不把虚构电话号码作为真实应急联系方式。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/lab-doorplate-v2.png",
+        "alt": "实验室门旁的责任信息牌，含责任人和校内分机教学示例"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "牌中的人员和联系方式均为虚构教学信息，正式学校应配置实际有效信息。",
+          "provenance": "改编示例不披露真实个人资料",
+          "placement": "teacher_note"
+        }
+      ],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "责任信息牌附着于实验室门旁",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "牌面责任人和联系字段清楚可读",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "苏州科技大学材料科学与工程学院实验室安全管理规范",
+          "url": "https://clxy.usts.edu.cn/info/1088/1716.htm",
+          "locator": "2022-11-07，第一、二、五、八、十条",
+          "supports": "标签清晰、任务防护、禁止饮食、责任信息、废弃物分类与委托处置",
+          "id": "lab",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp12",
+      "version": 2,
+      "title": "标签对象填空",
+      "cohort": "calibration",
+      "source_ref": "JZCIT:85",
+      "source_type": "填空题",
+      "source_locator": "文本序位85 / 印刷题号15",
+      "source_number": "15",
+      "source_url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+      "source_archive_sha256": "bbf654447c285faab76c2dffd45dfb02c8eb26c9f957a00c2fc54efde34144b0",
+      "template": "T07",
+      "template_version": "0.3",
+      "interaction": "fill",
+      "adapted": {
+        "stem": "观察瓶身标签：实验室里的哪类物品应标明这些信息？请填空。",
+        "options": [],
+        "answer": "化学药品",
+        "explanation": "源题对象为化学药品。保留填空作答，接受已列明的“化学药品”“化学试剂”作为本次研究等价表述，不改成选择。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": []
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/reagent-label-v2.png",
+        "alt": "封闭玻璃瓶标签写有名称乙醇、浓度75%、危险性质易燃",
+        "focus": [
+          0.27,
+          0.01,
+          0.46,
+          0.98
+        ]
+      },
+      "conditions": [],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "名称、浓度与危险性质直接印在瓶身标签上",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "苏州科技大学材料科学与工程学院实验室安全管理规范",
+          "url": "https://clxy.usts.edu.cn/info/1088/1716.htm",
+          "locator": "2022-11-07，第一、二、五、八、十条",
+          "supports": "标签清晰、任务防护、禁止饮食、责任信息、废弃物分类与委托处置",
+          "id": "lab",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp13",
+      "version": 2,
+      "title": "站外转账优惠",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:207",
+      "source_type": "判断题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D207:F207",
+      "source_number": "206",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T09",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "小王看到这段购物对话，心想：“万一被骗，还能向网店索赔，照做也没关系。”他的判断对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "可能投诉并不能证明站外收款可靠或损失必定追回；需要谨慎核验并使用符合平台规则的交易渠道。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/shopping-transfer-v2.png",
+        "alt": "衣服旁的手机购物对话，店家要求个人账户转账并提出九折优惠",
+        "focus": [
+          0.17,
+          0.01,
+          0.37,
+          0.98
+        ]
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "身份、交易与对话均为教学改编；不展示真实账号，不预断最终是否被骗。",
+          "provenance": "原题购买衣服、银行汇款、九折与索赔理由",
+          "placement": "teacher_note"
+        }
+      ],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "店家要求转到个人银行账户并以折扣吸引买家",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "买家提出出问题后向网店索赔的想法",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "中国政府网：同学们，这份反诈小贴士请查收",
+          "url": "https://app.www.gov.cn/govdata/gov/202201/05/480387/article.html",
+          "locator": "远离网络圈套、培养良好的支付习惯",
+          "supports": "可疑链接、核验域名、保护账号密码、谨慎求证转账要求",
+          "id": "anti-fraud",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp14",
+      "version": 2,
+      "title": "自称教师的邮件",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:538",
+      "source_type": "单选题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D538:F538",
+      "source_number": "537",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T09",
+      "template_version": "0.3",
+      "interaction": "single",
+      "adapted": {
+        "stem": "收到图示邮件后，这些线索可能对应哪类网络攻击？",
+        "options": [
+          "网络钓鱼邮件攻击",
+          "缓存区溢出攻击",
+          "分布式拒绝服务",
+          "水坑攻击"
+        ],
+        "answer": 0,
+        "explanation": "冒充可信身份，引导访问陌生网站并提交信息，是钓鱼邮件的可能线索；不能把“自称”当作已核验身份。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/phishing-mail-v2.png",
+        "alt": "电脑邮件界面，发件人自称班主任，要求在陌生网站实名注册"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "域名为不可点击的虚构示例；这里只判断“可能属于”，不是已证实的攻击结果。",
+          "provenance": "原题身份声明、陌生链接、真实姓名与可能限定",
+          "placement": "teacher_note"
+        }
+      ],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "发件人自称班主任，身份未核验",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "陌生域名和真实姓名注册请求",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "中国政府网：同学们，这份反诈小贴士请查收",
+          "url": "https://app.www.gov.cn/govdata/gov/202201/05/480387/article.html",
+          "locator": "远离网络圈套、培养良好的支付习惯",
+          "supports": "可疑链接、核验域名、保护账号密码、谨慎求证转账要求",
+          "id": "anti-fraud",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp15",
+      "version": 2,
+      "title": "异常登录短信",
+      "cohort": "calibration",
+      "source_ref": "CPU2025:585",
+      "source_type": "判断题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D585:F585",
+      "source_number": "584",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "T09",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "收到图示短信后，直接访问其中链接并输入密码，就能解决账号安全问题。对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "短信声明不能证明链接可信。应通过已知官方渠道核验，避免在可疑链接页面输入密码。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": [
+          0,
+          1
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/suspicious-sms-v2.png",
+        "alt": "手机陌生短信，称账号异常并要求打开链接输入密码"
+      },
+      "conditions": [],
+      "required_condition_ids": [],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "账号异常登录的短信话术",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "陌生链接和输入账号密码的要求",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "中国政府网：同学们，这份反诈小贴士请查收",
+          "url": "https://app.www.gov.cn/govdata/gov/202201/05/480387/article.html",
+          "locator": "远离网络圈套、培养良好的支付习惯",
+          "supports": "可疑链接、核验域名、保护账号密码、谨慎求证转账要求",
+          "id": "anti-fraud",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp16",
+      "version": 2,
+      "title": "A/B不等于正误固定顺序",
+      "cohort": "transfer",
+      "source_ref": "QCU-M:9",
+      "source_type": "判断语义，A/B作答",
+      "source_locator": "文本序位9 / 印刷题号9",
+      "source_number": "9",
+      "source_url": "https://lab.qcuwh.edu.cn/info/1004/1736.htm",
+      "source_archive_sha256": "b19e1e1b850db7112d78a9385659c047787114f786f246dde9c35fe246b5c413",
+      "template": "T10",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "可以自行拆卸或移动机床上的安全防护装置。这个说法对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "原题选项A表示正确，但源命题是不得任意拆移；本改编把命题反转，因此答案是错误。字母与命题方向必须分别处理。"
+      },
+      "answer_mapping": {
+        "mode": "proposition_reversal",
+        "source_to_adapted": [
+          1,
+          0
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/machine-guard-v2.png",
+        "alt": "停止运转的机床及附着于主轴区域的透明防护罩"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "仅判断自行变更行为，不涉及获准维护或停机检修操作。",
+          "provenance": "原题任意限定",
+          "placement": "stem",
+          "student_text": "自行"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "实际防护罩与机床的安装关系",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "仅判断自行变更行为，不涉及获准维护或停机检修操作。",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "天津城建大学钳工安全操作规程",
+          "url": "https://cetc.tcu.edu.cn/info/1264/1331.htm",
+          "locator": "第4项",
+          "supports": "铁屑清除使用工具，不直接手拿或用嘴吹",
+          "id": "workshop",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp17",
+      "version": 2,
+      "title": "熟练不代表授权",
+      "cohort": "transfer",
+      "source_ref": "QCU-M:10",
+      "source_type": "判断语义，A/B作答",
+      "source_locator": "文本序位10 / 印刷题号10",
+      "source_number": "10",
+      "source_url": "https://lab.qcuwh.edu.cn/info/1004/1736.htm",
+      "source_archive_sha256": "b19e1e1b850db7112d78a9385659c047787114f786f246dde9c35fe246b5c413",
+      "template": "T10",
+      "template_version": "0.3",
+      "interaction": "judge",
+      "adapted": {
+        "stem": "操作已经很熟练，即使指导老师尚未同意，也可以自行开机。对吗？",
+        "options": [
+          "正确",
+          "错误"
+        ],
+        "answer": 1,
+        "explanation": "源题A是错误、B是正确；熟练程度不能替代许可。本卡使用正确/错误按钮重新映射，不能把答案A直接转为正确。"
+      },
+      "answer_mapping": {
+        "mode": "option_reorder",
+        "source_to_adapted": [
+          1,
+          0
+        ]
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/machine-permission-v2.png",
+        "alt": "停止的机床旁有本次开机记录，训练已完成但老师同意未取得"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "本次开机尚未取得指导老师同意。",
+          "provenance": "原题未经指导老师同意",
+          "placement": "stem",
+          "student_text": "指导老师尚未同意"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "纸质记录分列训练完成与老师同意状态",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "本次开机尚未取得老师同意",
+          "carrier": "image",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "天津城建大学钳工安全操作规程",
+          "url": "https://cetc.tcu.edu.cn/info/1264/1331.htm",
+          "locator": "第4项",
+          "supports": "铁屑清除使用工具，不直接手拿或用嘴吹",
+          "id": "workshop",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp18",
+      "version": 2,
+      "title": "废弃物管理链路",
+      "cohort": "transfer",
+      "source_ref": "JZCIT:95",
+      "source_type": "简答题",
+      "source_locator": "文本序位95 / 印刷题号5",
+      "source_number": "5",
+      "source_url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+      "source_archive_sha256": "bbf654447c285faab76c2dffd45dfb02c8eb26c9f957a00c2fc54efde34144b0",
+      "template": "T08",
+      "template_version": "0.3",
+      "interaction": "short",
+      "adapted": {
+        "stem": "图中废弃物已经确认类别。应怎样分别收集和交接处理？请用自己的话回答。",
+        "options": [],
+        "answer": "实验室内产生的废弃物应按照分类原则进行处理，有害废弃物应单独收集，交由专业机构进行处理。普通废弃物应放入指定垃圾桶内，确保环境安全。",
+        "explanation": "对照要点：分类收集；有害废物单独管理并交给相应专业机构；普通废物进入指定收集渠道。简答不以关键词命中自动判满分，也不将自评写成考试分数。"
+      },
+      "answer_mapping": {
+        "mode": "identity",
+        "source_to_adapted": []
+      },
+      "visual": {
+        "kind": "image",
+        "image": "assets/visual-pilot/waste-management-v2.png",
+        "alt": "有害废弃物与普通废弃物两个独立封闭容器，旁有空白交接记录"
+      },
+      "conditions": [
+        {
+          "id": "H1",
+          "text": "只讨论已分类确认的废物管理关系，不涉及未知物分类判断或任何混合处理。",
+          "provenance": "原题分类、单独收集与专业机构条件",
+          "placement": "stem",
+          "student_text": "废弃物已经确认类别"
+        }
+      ],
+      "required_condition_ids": [
+        "H1"
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "fact": "不同类别对应相互独立的收集容器",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E2",
+          "fact": "分类容器旁有待填写的交接记录",
+          "carrier": "image",
+          "required": true
+        },
+        {
+          "id": "E3",
+          "fact": "只讨论已分类确认的废物管理关系，不涉及未知物分类判断或任何混合处理。",
+          "carrier": "H1",
+          "required": true
+        }
+      ],
+      "basis": [
+        {
+          "title": "苏州科技大学材料科学与工程学院实验室安全管理规范",
+          "url": "https://clxy.usts.edu.cn/info/1088/1716.htm",
+          "locator": "2022-11-07，第一、二、五、八、十条",
+          "supports": "标签清晰、任务防护、禁止饮食、责任信息、废弃物分类与委托处置",
+          "id": "lab",
+          "verification": "官方正文已读，限本题条件；未作跨校制度全面审定",
+          "checked_at": "2026-10-09"
+        }
+      ],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "重新核对完整原题、选项与答案；必要前提移入题干或选项；制作说明只保留在教师对照",
+        "status": "passed",
+        "risks": [],
+        "preserved_conditions": true,
+        "checked_at": "2026-10-10"
+      },
+      "critical_regions": [],
+      "assets": [],
+      "observations": [],
+      "online_generation": false,
+      "publication": "research_only"
+    },
+    {
+      "id": "vp19",
+      "version": 1,
+      "title": "题干与源答案冲突",
+      "cohort": "negative",
+      "source_ref": "QCU-M:96",
+      "source_type": "多选",
+      "source_locator": "文本序位96 / 印刷题号96",
+      "source_number": "96",
+      "source_url": "https://lab.qcuwh.edu.cn/info/1004/1736.htm",
+      "source_archive_sha256": "b19e1e1b850db7112d78a9385659c047787114f786f246dde9c35fe246b5c413",
+      "template": "BLOCK",
+      "interaction": "blocked",
+      "adapted": null,
+      "conditions": [],
+      "evidence": [],
+      "assets": [],
+      "observations": [],
+      "basis": [],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "完整原题与源答案比对",
+        "status": "needs_review",
+        "risks": [
+          {
+            "code": "source_answer_conflict",
+            "message": "答案ABC包含未经许可擅离岗位，不能把它画为正确行为。"
+          }
+        ],
+        "preserved_conditions": false
+      },
+      "publication": "research_only",
+      "online_generation": false
+    },
+    {
+      "id": "vp20",
+      "version": 1,
+      "title": "集中答案表错配",
+      "cohort": "negative",
+      "source_ref": "JZCIT:8",
+      "source_type": "选择题",
+      "source_locator": "文本序位8 / 印刷题号8",
+      "source_number": "8",
+      "source_url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+      "source_archive_sha256": "bbf654447c285faab76c2dffd45dfb02c8eb26c9f957a00c2fc54efde34144b0",
+      "template": "BLOCK",
+      "interaction": "blocked",
+      "adapted": null,
+      "conditions": [],
+      "evidence": [],
+      "assets": [],
+      "observations": [],
+      "basis": [],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "完整原题与源答案比对",
+        "status": "needs_review",
+        "risks": [
+          {
+            "code": "source_answer_conflict",
+            "message": "集中答案为C，但C是短袖T恤；源答案与防护装备题意冲突。"
+          }
+        ],
+        "preserved_conditions": false
+      },
+      "publication": "research_only",
+      "online_generation": false
+    },
+    {
+      "id": "vp21",
+      "version": 1,
+      "title": "单选不唯一",
+      "cohort": "negative",
+      "source_ref": "JZCIT:10",
+      "source_type": "选择题",
+      "source_locator": "文本序位10 / 印刷题号10",
+      "source_number": "10",
+      "source_url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+      "source_archive_sha256": "bbf654447c285faab76c2dffd45dfb02c8eb26c9f957a00c2fc54efde34144b0",
+      "template": "BLOCK",
+      "interaction": "blocked",
+      "adapted": null,
+      "conditions": [],
+      "evidence": [],
+      "assets": [],
+      "observations": [],
+      "basis": [],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "完整原题与源答案比对",
+        "status": "needs_review",
+        "risks": [
+          {
+            "code": "single_not_unique",
+            "message": "集中答案为B，吸烟和吃东西均可成立，不能直接按单选发布。"
+          }
+        ],
+        "preserved_conditions": false
+      },
+      "publication": "research_only",
+      "online_generation": false
+    },
+    {
+      "id": "vp22",
+      "version": 1,
+      "title": "持续运行例外缺失",
+      "cohort": "negative",
+      "source_ref": "CPU2025:456",
+      "source_type": "多选题",
+      "source_locator": "2025年题库组稿（350+300+350版）!D456:F456",
+      "source_number": "455",
+      "source_url": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+      "source_archive_sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+      "template": "BLOCK",
+      "interaction": "blocked",
+      "adapted": null,
+      "conditions": [],
+      "evidence": [],
+      "assets": [],
+      "observations": [],
+      "basis": [],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "完整原题与源答案比对",
+        "status": "needs_review",
+        "risks": [
+          {
+            "code": "missing_scope_exception",
+            "message": "关闭水电气的笼统要求未限定必要持续运行设备；先补场景与学校依据。"
+          }
+        ],
+        "preserved_conditions": false
+      },
+      "publication": "research_only",
+      "online_generation": false
+    },
+    {
+      "id": "vp23",
+      "version": 1,
+      "title": "任务装备条件不足",
+      "cohort": "negative",
+      "source_ref": "JZCIT:71",
+      "source_type": "填空题",
+      "source_locator": "文本序位71 / 印刷题号1",
+      "source_number": "1",
+      "source_url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+      "source_archive_sha256": "bbf654447c285faab76c2dffd45dfb02c8eb26c9f957a00c2fc54efde34144b0",
+      "template": "BLOCK",
+      "interaction": "blocked",
+      "adapted": null,
+      "conditions": [],
+      "evidence": [],
+      "assets": [],
+      "observations": [],
+      "basis": [],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "完整原题与源答案比对",
+        "status": "needs_review",
+        "risks": [
+          {
+            "code": "missing_activity_scope",
+            "message": "括号后源答案已恢复，但把实验服、眼镜、手套作为通用入室要求仍缺具体任务。"
+          }
+        ],
+        "preserved_conditions": false
+      },
+      "publication": "research_only",
+      "online_generation": false
+    },
+    {
+      "id": "vp24",
+      "version": 1,
+      "title": "容器要求过度泛化",
+      "cohort": "negative",
+      "source_ref": "JZCIT:74",
+      "source_type": "填空题",
+      "source_locator": "文本序位74 / 印刷题号4",
+      "source_number": "4",
+      "source_url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+      "source_archive_sha256": "bbf654447c285faab76c2dffd45dfb02c8eb26c9f957a00c2fc54efde34144b0",
+      "template": "BLOCK",
+      "interaction": "blocked",
+      "adapted": null,
+      "conditions": [],
+      "evidence": [],
+      "assets": [],
+      "observations": [],
+      "basis": [],
+      "semantic_review": {
+        "actor": "Codex内容设计审查",
+        "method": "完整原题与源答案比对",
+        "status": "needs_review",
+        "risks": [
+          {
+            "code": "source_scope_conflict",
+            "message": "原答案笼统禁止玻璃或易碎容器，缺少化学品与容器适配任务条件。"
+          }
+        ],
+        "preserved_conditions": false
+      },
+      "publication": "research_only",
+      "online_generation": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+/* Cover coordinates match the visible front cover in assets/blank-book.png.
+   Keep the original 3:2 image ratio so text never drifts into letterboxing. */
+.book-carrier,.book{display:block;position:relative;width:100%;max-width:none;height:auto;aspect-ratio:3/2;margin:0 auto 12px;overflow:hidden;border-radius:9px;background:#f4f3ed}
+.book-carrier img,.book img,.quiz-card .choice .book-carrier img{display:block;position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:fill;margin:0;border-radius:0}
+.book-carrier>span,.book>.book-title{position:absolute;inset:17% 29% 18% 38%;width:auto;display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;line-height:1.5;color:#334736;overflow-wrap:anywhere;white-space:normal;transform:rotate(-3deg)}
+/* Dialogue remains part of the illustration, as a native, readable speech bubble. */
+.scene.dialogue-scene{aspect-ratio:3/2;min-height:310px;max-height:none;isolation:isolate}
+.dialogue-scene .dialogue-overlay,.dialogue-scene .dialogue{position:absolute;right:4%;top:19%;bottom:auto;left:auto;width:45%;max-width:none;padding:16px 18px;background:#fffdf7f5;border:1px solid #d9e1cf;border-radius:18px;box-shadow:0 4px 16px #253c2320;font-size:14px;line-height:1.7;z-index:2;text-align:left;overflow-wrap:anywhere}
+.dialogue-scene .dialogue-overlay::after,.dialogue-scene .dialogue::after{content:'';position:absolute;left:16px;bottom:-12px;width:20px;height:20px;background:#fffdf7;clip-path:polygon(0 0,100% 0,0 100%)}
+.dialogue-scene strong,.dialogue-scene b{display:block;font-size:12px;color:#526e4a}
+.dialogue-scene p{margin:5px 0 0}
+@media(max-width:620px){.book-carrier>span,.book>.book-title{font-size:12px}.scene.dialogue-scene{min-height:340px;aspect-ratio:auto}.dialogue-scene>img{position:absolute;inset:0;object-fit:cover;object-position:40% center}.dialogue-scene .dialogue-overlay,.dialogue-scene .dialogue{top:18%;right:4%;width:49%;padding:12px;font-size:13px;line-height:1.65}}

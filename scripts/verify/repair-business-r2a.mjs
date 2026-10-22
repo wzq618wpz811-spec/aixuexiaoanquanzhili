@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {QwenImageService,DeepSeekPlanner} from '../../src/visual-pipeline.mjs';
+const file='data/business-type-samples.json',data=JSON.parse(readFileSync(file,'utf8')),row=data.samples.find(x=>x.id==='R2');
+const service=new QwenImageService({assetsDir:'web/assets/generated',referencePath:'web/assets/character-atlas.png'});
+const prompt='A single clear close-up 3D educational illustration on a pale wooden computer desk. Two separate white power strips, A on the left and B on the right. A has its own white cord going to the wall. B has ONE black power cable permanently emerging from the SIDE OF ITS PLASTIC CASING. That cable curves left and terminates in ONE black male plug inserted FLUSH INSIDE one socket of strip A. This is daisy-chaining: B receives power from A. Do not draw a male-to-male cable; the B end must emerge from the casing, not a socket. B also has one computer plug in one of its sockets, its separate cable leads off the back. No people, no hands, no text, no letters A/B, no numbers, no diagrams, no extra props. Warm matte 3D material, sage and ivory, clean natural light. A and B are descriptions only, do not write them in the image.';
+const result=await service.generate(prompt),audit=await new DeepSeekPlanner().audit(result.bytes,{route:'R1',expectedLayout:'single',sceneDescription:'两个独立插线板。右侧插线板自带电源线从塑料外壳侧面引出，另一端的单个插头插入左侧插线板的插孔，不是两个公插头互连。'});
+row.candidate.options[0]={...row.candidate.options[0],image:result.relative};delete row.candidate.options[0].crop;
+row.candidate.issues=['原始题库没有可核查的依据链接',...(!audit.pass?audit.issues:[])];
+row.reviewNotes=['A改为插线板接线近景，用于重点检查插头和导线连接是否真实。','人物仍继承参考图的护目镜，作为后续风格调整项。'];
+writeFileSync('artifacts/business-type-samples/R2.json',JSON.stringify(row,null,2));
+const record=data.samples.find(x=>x.id==='R4');record.candidate.options=record.candidate.options.map(o=>({...o,caption:'交接记录'}));record.reviewedPlan.captions=record.candidate.options.map(()=> '交接记录');writeFileSync('artifacts/business-type-samples/R4.json',JSON.stringify(record,null,2));
+const sequence=data.samples.find(x=>x.id==='R8');sequence.reviewNotes=['已改为每个步骤分别生成一张独立图片，页面再打乱位置，不重复生成多套排列。','屏幕上仍有模型生成的伪文字，部分操作手势不够自然；该问题已保留供本轮检查，尚未通过正式发布审核。'];writeFileSync('artifacts/business-type-samples/R8.json',JSON.stringify(sequence,null,2));
+writeFileSync(file,JSON.stringify(data,null,2));console.log(JSON.stringify({image:result.relative,audit}));

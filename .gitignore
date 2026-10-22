@@ -1,0 +1,23 @@
+data/
+artifacts/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+prototype/assets/uploads/
+web/assets/uploads/
+__pycache__/
+*.pyc
+research/question-banks/
+research/visual-pilot/
+.migration-backup/
+
+# Only sanitized product seed databases are shared.
+!data/
+data/*
+!data/demo.sqlite
+!data/question-bank.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal

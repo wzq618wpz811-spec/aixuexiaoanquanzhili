@@ -1,0 +1,37 @@
+{
+  "method": "RGB absolute difference outside a declared action region; analysis only, no image edits",
+  "action_region_normalized": [
+    0.22,
+    0.13,
+    0.54,
+    0.82
+  ],
+  "threshold_for_changed_pixel": 12,
+  "does_not_prove": "semantic invariance or perfect background preservation",
+  "pairs": [
+    {
+      "base": "scene-03.png",
+      "variant": "scene-04.png",
+      "outside_region_mean_absolute_channel_difference": 2.7044,
+      "outside_region_changed_pixel_fraction": 0.018536
+    },
+    {
+      "base": "scene-03.png",
+      "variant": "scene-05.png",
+      "outside_region_mean_absolute_channel_difference": 10.3231,
+      "outside_region_changed_pixel_fraction": 0.118022
+    }
+  ],
+  "repeated_generations": [
+    {
+      "base": "scene-01.png",
+      "repeat": "scene-06.png",
+      "observation": "电话接触证据保留；手侧、背景和道具位置明显变化，不能当同场景对照选项"
+    },
+    {
+      "base": "scene-03.png",
+      "repeat": "scene-07.png",
+      "observation": "刷毛与铁屑接触、手与铁屑分离保留；背景、机位和构图变化，不能代替共享底图"
+    }
+  ]
+}

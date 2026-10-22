@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-09",
+  "real_calls": 7,
+  "items": [
+    {
+      "id": "phone",
+      "path": "prototype/assets/visual-pilot/scene-01.png",
+      "source_file": "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-e168d2dd-468c-4530-a886-1ad29612c588.png",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: scientific-educational. Asset: observation illustration for an actual university safety true/false source question about answering a telephone with experimental protective gloves while an experiment is in progress. Image 1 is IDENTITY AND STYLE reference ONLY: use the navy-blue and cream dog in the top row, never the orange fox, do not reproduce the atlas. Create one landscape 1536x1024 scene. Side three-quarter medium close-up of the blue dog at a clean laboratory bench, wearing a buttoned white laboratory coat, clear goggles and blue protective gloves. One gloved hand visibly grips a plain dark corded telephone receiver and holds it to the ear. Show an unmistakable receiver, its hand contact, the ear, a coiled cord and a small telephone base on a separate clean side shelf. The glove-to-receiver contact is the critical evidence, unobstructed and large enough to see on a 390px card. The other gloved hand rests calmly above the experiment bench; simple closed unlabelled glass vessels in the background give the laboratory context without any hazardous procedure. Neutral focused expression, looking toward the bench, no smile at camera. Soft matte educational 3D, ivory and muted sage tones matching reference. No flames, injury, smoke, spills, food, extra hazards or contamination stains. No text, numbers, symbols, labels, checkmarks, crosses, red/green correctness coding or watermarks. Do not try to depict the invisible history of the gloves; that will be stated in the condition card by code. No character atlas or multi-panel output.",
+      "reference_files": [
+        "D:/project/aixuexiaozhili/prototype/assets/character-atlas.png"
+      ],
+      "kind": "reference_generate",
+      "repeat_of": null,
+      "model_name": "not_exposed_by_builtin_tool",
+      "request_id": "not_exposed_by_builtin_tool",
+      "usage": "not_exposed_by_builtin_tool",
+      "transparent_background": false,
+      "sha256": "d86ac4ed97129fca30327beb30008135b2c38cac9cf16b9f575f61388063bc77",
+      "bytes": 1870587
+    },
+    {
+      "id": "keyboard",
+      "path": "prototype/assets/visual-pilot/scene-02.png",
+      "source_file": "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-d4200bd0-ecf3-47bb-8f0b-69d8983b307b.png",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: scientific-educational. Asset: observation illustration for an actual university safety true/false source question about experimental gloves touching a shared computer. Image 1 is IDENTITY AND STYLE reference ONLY: use the navy-blue and cream dog in the top row, not the fox, not the atlas. Create one landscape 1536x1024 scene, a side three-quarter close-up of a gloved hand and keyboard with the blue dog's upper body visible. The character wears a white buttoned laboratory coat, clear goggles and BLUE protective gloves, looks at the keyboard with a neutral focused expression. One gloved index finger is visibly pressing a key on a recognizable computer keyboard on a shared computer desk separate from the experiment bench. Glove, finger and key contact must be large, sharply legible and unobscured; show wrist and plausible finger geometry. Monitor may appear at the edge with a plain blank screen, no text, no icons. A simple out-of-focus laboratory bench behind conveys setting but does not add any hazard or unknown equipment state. Soft matte educational 3D, ivory/sage palette matching reference, natural light, no cinematic dramatic blur around the evidence. All invisible glove-use history will be provided by the webpage, do not add dirt, colored contamination, liquid drops or warning lights. No text, labels, digits, verdicts, arrows, check/cross symbols, answer cues, red/green coding or watermark. One single scene.",
+      "reference_files": [
+        "D:/project/aixuexiaozhili/prototype/assets/character-atlas.png"
+      ],
+      "kind": "reference_generate",
+      "repeat_of": null,
+      "model_name": "not_exposed_by_builtin_tool",
+      "request_id": "not_exposed_by_builtin_tool",
+      "usage": "not_exposed_by_builtin_tool",
+      "transparent_background": false,
+      "sha256": "d294e41129684dc63b49bb39b9cc5ddf38f511ea602d8b1c04e19fd3e7a6d9d0",
+      "bytes": 2072529
+    },
+    {
+      "id": "cleanup",
+      "path": "prototype/assets/visual-pilot/scene-03.png",
+      "source_file": "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-e53dc0f9-fe86-4d9f-b85b-88f7997f5e30.png",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: scientific-educational. Asset: base illustration for a three-option visual choice derived from QCU-M question 18, removing metal chips from a workbench. Image 1 is identity/style reference ONLY: navy-blue cream dog in the top row; do not inherit its laboratory coat or gloves. Task outfit: close-fitting muted sage workshop jacket with fastened cuffs and clear goggles over both eyes, NO GLOVES in this base. Create one 1536x1024 landscape medium close-up from a side three-quarter angle. The blue dog stands behind a plain light-gray metal workbench. Small clearly identifiable curled metal shavings lie on the work surface in the center foreground. One bare blue-furred hand visibly grips the wooden handle of a short workshop brush; the brush bristles actually touch the metal shavings. Fingers are well separated from the bristles and shavings. The other hand is resting away from the chips at the far edge. Head, mouth, goggles, both hands, brush and chips all visible; plenty of room to later change the cleaning method while keeping this background and camera. No machine operating or rotating parts in frame. Neutral focused face looking at the work, not camera. Soft matte university educational 3D, ivory and sage, even lighting. No text, numbers, labels, arrows, checkmarks, crosses, danger effects, injuries, flying chips, correct/incorrect color coding or watermark. Render one scene, not a comparison grid.",
+      "reference_files": [
+        "D:/project/aixuexiaozhili/prototype/assets/character-atlas.png"
+      ],
+      "kind": "reference_generate",
+      "repeat_of": null,
+      "model_name": "not_exposed_by_builtin_tool",
+      "request_id": "not_exposed_by_builtin_tool",
+      "usage": "not_exposed_by_builtin_tool",
+      "transparent_background": false,
+      "sha256": "b5bc7ed88c260b70e9fe731ef86892f597f148aa731ff137818b6e22ee544a2c",
+      "bytes": 2141790
+    },
+    {
+      "id": "cleanup_grip",
+      "path": "prototype/assets/visual-pilot/scene-04.png",
+      "source_file": "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-b261e02e-aafa-4cae-9763-d83dd037d42c.png",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit; university scientific-educational quiz variant. Image 1 is the edit target: the blue dog brushing curled metal shavings on a workbench. Change ONLY the cleanup method at the active hand: remove the brush completely and put a plain matte gray protective glove on the active hand, with fingers clearly gathering the metal shavings directly by hand on the same workbench. Preserve the other hand, the shavings amount and location, character identity, head, neutral expression, goggles, sage workshop jacket, camera, table, background, lighting and image dimensions. The gray glove must be unambiguously a glove with smooth material and a cuff; no brush, handle or other tool remains. The gloved fingers must visibly contact the shavings. A small natural hand repositioning needed for this action is allowed, nothing else. This is a candidate answer scene, do not add verdicts, warning effects, text, symbols, red/green coding or extra hazards. One landscape scene matching Image 1.",
+      "reference_files": [
+        "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-e53dc0f9-fe86-4d9f-b85b-88f7997f5e30.png"
+      ],
+      "kind": "reference_edit",
+      "repeat_of": null,
+      "model_name": "not_exposed_by_builtin_tool",
+      "request_id": "not_exposed_by_builtin_tool",
+      "usage": "not_exposed_by_builtin_tool",
+      "transparent_background": false,
+      "sha256": "2ee11c9d64c86e234e35b9f37faa907b2c7f724beef61d04b0a36cc2f9d71d58",
+      "bytes": 2033057
+    },
+    {
+      "id": "cleanup_blow",
+      "path": "prototype/assets/visual-pilot/scene-05.png",
+      "source_file": "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-a32ef47b-bedf-49dd-b6a5-b732b86a9bfe.png",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit; university scientific-educational quiz variant. Image 1 is the edit target: the blue dog brushing curled metal shavings on a workbench. Change ONLY the cleaning action: completely remove the brush, keep both hands away from the shavings, and have the same character lean the head slightly toward the shavings with clearly pursed lips visibly blowing toward them. Show small subtle monochrome air strokes from mouth toward shavings so the blowing action can be observed on a small card. Do not show chips flying or injury. Preserve the SAME character identity, clear goggles over the eyes, sage workshop jacket, expression neutrality, chip pile location, workbench, camera, lighting and background. Necessary head and active-hand pose change only, same framing and equal detail. No words, labels, verdicts, checkmarks, crosses, dramatic hazard effects, red/green coding or additional hazards. One landscape scene matching Image 1.",
+      "reference_files": [
+        "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-e53dc0f9-fe86-4d9f-b85b-88f7997f5e30.png"
+      ],
+      "kind": "reference_edit",
+      "repeat_of": null,
+      "model_name": "not_exposed_by_builtin_tool",
+      "request_id": "not_exposed_by_builtin_tool",
+      "usage": "not_exposed_by_builtin_tool",
+      "transparent_background": false,
+      "sha256": "fe80c679757829a010b0aa5445c895d69d1c850bcee25d33774e608849b50549",
+      "bytes": 2065440
+    },
+    {
+      "id": "phone_repeat",
+      "path": "prototype/assets/visual-pilot/scene-06.png",
+      "source_file": "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-f72c65e2-a479-42d7-a2ac-80c40e0b230b.png",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: scientific-educational. Asset: observation illustration for an actual university safety true/false source question about answering a telephone with experimental protective gloves while an experiment is in progress. Image 1 is IDENTITY AND STYLE reference ONLY: use the navy-blue and cream dog in the top row, never the orange fox, do not reproduce the atlas. Create one landscape 1536x1024 scene. Side three-quarter medium close-up of the blue dog at a clean laboratory bench, wearing a buttoned white laboratory coat, clear goggles and blue protective gloves. One gloved hand visibly grips a plain dark corded telephone receiver and holds it to the ear. Show an unmistakable receiver, its hand contact, the ear, a coiled cord and a small telephone base on a separate clean side shelf. The glove-to-receiver contact is the critical evidence, unobstructed and large enough to see on a 390px card. The other gloved hand rests calmly above the experiment bench; simple closed unlabelled glass vessels in the background give the laboratory context without any hazardous procedure. Neutral focused expression, looking toward the bench, no smile at camera. Soft matte educational 3D, ivory and muted sage tones matching reference. No flames, injury, smoke, spills, food, extra hazards or contamination stains. No text, numbers, symbols, labels, checkmarks, crosses, red/green correctness coding or watermarks. Do not try to depict the invisible history of the gloves; that will be stated in the condition card by code. No character atlas or multi-panel output.",
+      "reference_files": [
+        "D:/project/aixuexiaozhili/prototype/assets/character-atlas.png"
+      ],
+      "kind": "reference_generate",
+      "repeat_of": "phone",
+      "model_name": "not_exposed_by_builtin_tool",
+      "request_id": "not_exposed_by_builtin_tool",
+      "usage": "not_exposed_by_builtin_tool",
+      "transparent_background": false,
+      "sha256": "f31c28f98787c949b227ca3baa2f717ca347f7a46dfa3bbcf1982d498baf0cb5",
+      "bytes": 1926227
+    },
+    {
+      "id": "cleanup_repeat",
+      "path": "prototype/assets/visual-pilot/scene-07.png",
+      "source_file": "C:\\Users\\liuqi\\.mirasim\\agent-homes\\codex-relay\\generated_images\\01a120f1-3f38-7ee1-a685-eb77140fddb1\\exec-351804b0-fcc6-409c-949e-613fe65a1041.png",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: scientific-educational. Asset: base illustration for a three-option visual choice derived from QCU-M question 18, removing metal chips from a workbench. Image 1 is identity/style reference ONLY: navy-blue cream dog in the top row; do not inherit its laboratory coat or gloves. Task outfit: close-fitting muted sage workshop jacket with fastened cuffs and clear goggles over both eyes, NO GLOVES in this base. Create one 1536x1024 landscape medium close-up from a side three-quarter angle. The blue dog stands behind a plain light-gray metal workbench. Small clearly identifiable curled metal shavings lie on the work surface in the center foreground. One bare blue-furred hand visibly grips the wooden handle of a short workshop brush; the brush bristles actually touch the metal shavings. Fingers are well separated from the bristles and shavings. The other hand is resting away from the chips at the far edge. Head, mouth, goggles, both hands, brush and chips all visible; plenty of room to later change the cleaning method while keeping this background and camera. No machine operating or rotating parts in frame. Neutral focused face looking at the work, not camera. Soft matte university educational 3D, ivory and sage, even lighting. No text, numbers, labels, arrows, checkmarks, crosses, danger effects, injuries, flying chips, correct/incorrect color coding or watermark. Render one scene, not a comparison grid.",
+      "reference_files": [
+        "D:/project/aixuexiaozhili/prototype/assets/character-atlas.png"
+      ],
+      "kind": "reference_generate",
+      "repeat_of": "cleanup",
+      "model_name": "not_exposed_by_builtin_tool",
+      "request_id": "not_exposed_by_builtin_tool",
+      "usage": "not_exposed_by_builtin_tool",
+      "transparent_background": false,
+      "sha256": "0e34745970832e39efeaa5bbf82b0ea09a573d1a4f34ab9c074b657e3a4a795a",
+      "bytes": 2118194
+    }
+  ]
+}

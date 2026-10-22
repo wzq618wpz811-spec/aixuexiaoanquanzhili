@@ -1,0 +1,8 @@
+/* Bubble and image occupy separate rows of one illustration frame.
+   No absolute text can cover a character at any viewport width. */
+.scene.dialogue-scene{display:flex;flex-direction:column;aspect-ratio:auto;min-height:0;max-height:none!important;max-width:640px;margin:0 auto;background:#f0f3e9;border:1px solid #dfe6d6;isolation:isolate}
+.scene.dialogue-scene .dialogue-overlay,.scene.dialogue-scene .dialogue{position:relative;inset:auto;align-self:flex-end;width:auto;max-width:90%;margin:15px 18px 20px;padding:12px 16px;flex:none;z-index:auto;font-size:14px;line-height:1.7;box-shadow:0 3px 12px #243d2210;transform:none}
+.scene.dialogue-scene .dialogue-overlay::after,.scene.dialogue-scene .dialogue::after{left:auto;right:24px;bottom:-12px}
+.scene.dialogue-scene>.dialogue-picture{flex:none;width:100%;min-height:0;max-height:none;aspect-ratio:3/2;margin:0;border-radius:0;border:0}
+.generated-scene .scene-facts,.scene.dialogue-scene .scene-facts{top:auto;bottom:8px}
+@media(max-width:720px){.scene.dialogue-scene .dialogue-overlay,.scene.dialogue-scene .dialogue{max-width:92%;margin:12px 12px 18px;font-size:13px;padding:11px 13px}}

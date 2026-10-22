@@ -1,0 +1,16 @@
+{
+  "mode": "built-in imagegen",
+  "date": "2026-10-09",
+  "images": [
+    {
+      "file": "prototype/assets/card-a.png",
+      "reference": "prototype/assets/jiaoxiaoping-jiaoxiaoan-reference.jpg",
+      "prompt": "Use case: scientific-educational. Asset type: landscape image card for a university lab safety learning web app. Input image is a character identity reference only: the two navy-blue and cream dog mascots Jiaoxiaoping and Jiaoxiaoan, with tan eyebrow patches, cream central face stripe, cream muzzle, round red nose and pointy ears. Create one of these characters as a polished soft 3D editorial illustration, retaining recognizable face and fur colors, wearing a buttoned white lab coat over a pale blue shirt, blue nitrile gloves, and CLEAR WRAPAROUND SAFETY GOGGLES CORRECTLY COVERING BOTH EYES. No cap. The character is standing in a clean chemistry teaching laboratory about to begin work, gloved hands resting loosely apart on the workbench. A couple of closed glass bottles far to the side, no hazardous procedure, no food. Medium waist-up front three-quarter view; both eyes and eye protection clearly visible, generous neutral space, uncluttered laboratory behind. Refined university aesthetic, warm ivory and muted sage-green laboratory, matte materials, soft daylight, detailed but legible at card size. No writing, labels, logos, tick marks, arrows, verdicts or watermarks; do not reveal the correct answer with color cues. Single landscape illustration, 1536 by 1024 composition."
+    },
+    {
+      "file": "prototype/assets/card-b.png",
+      "reference": "prototype/assets/card-a.png",
+      "prompt": "Use case: precise-object-edit, scientific educational safety quiz asset. Edit the provided laboratory mascot illustration. Change ONLY the safety goggles: move the entire clear goggles up onto the character's forehead, above both eyes, so BOTH EYES ARE COMPLETELY UNCOVERED, visibly unprotected. Goggles rest high on forehead under the ears. Preserve exactly the same mascot identity, facial expression, posture, white lab coat, gloves, scene, background, bottles, camera framing, dimensions, lighting and color palette. This is a deliberately incorrect example for a safety quiz comparing eye protection placement. No injury, no new objects, no writing, no labels, no check/cross marks, no warning colors, no other clues to the answer. Must be identical scene except for the goggles position."
+    }
+  ]
+}

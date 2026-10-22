@@ -1,0 +1,22 @@
+{
+  "clinical": [
+    {
+      "id": "clinical",
+      "kind": "workflow",
+      "file": "web/assets/curriculum/clinical-workflow.png",
+      "prompt": "Use case scientific-educational. ONE 3:2 landscape image with EXACTLY FOUR equal 2x2 panels, narrow white dividers at exact half width/height. Same blue plush campus mascot identity from reference, soft matte 3D, ivory sage wood palette. This is a medical TEACHING SIMULATION classroom with clean unpowered teaching props only, no patients or invasive treatment. NO laboratory coats, goggles, gloves. Sage plain simulation scrub top, bare furry blue paws. Four physically DIFFERENT actions or destinations. TOP LEFT: blue mascot in sage simulation scrubs filling a blank teaching equipment borrowing clipboard beside a CLOSED clean training kit. TOP RIGHT: blue mascot in plain sage nursing simulation scrubs, NO goggles and NO gloves, reading a blank teaching supplies handbook next to a clean unpowered nursing training mannequin, no patient. BOTTOM LEFT: blue mascot in sage simulation scrubs handing a CLOSED clean teaching equipment carrier to orange mascot in cream simulation scrubs at a teaching supplies counter. BOTTOM RIGHT: blue mascot in sage simulation scrubs matching an identification card to a clean plastic dental teaching model and closed training supplies box, no patient or clinical treatment. No letters, words, numbers, Chinese text, tick/cross, correct colors, logo, watermark or extra subpanels. Show closed carriers and clean unpowered models only."
+    },
+    {
+      "id": "clinical",
+      "kind": "destinations",
+      "file": "web/assets/curriculum/clinical-destinations.png",
+      "prompt": "Use case scientific-educational. ONE 3:2 landscape image with EXACTLY FOUR equal 2x2 panels, narrow white dividers at exact half width/height. Same blue plush campus mascot identity from reference, soft matte 3D, ivory sage wood palette. This is a medical TEACHING SIMULATION classroom with clean unpowered teaching props only, no patients or invasive treatment. NO laboratory coats, goggles, gloves. Sage plain simulation scrub top, bare furry blue paws. Four physically DIFFERENT actions or destinations. TOP LEFT: closed clean training equipment cabinet containing unpowered mannequin parts and teaching models. TOP RIGHT: teaching supplies counter with closed clean kit and blank borrowing form. BOTTOM LEFT: inspection desk holding clean plastic dental model and a magnifying glass. BOTTOM RIGHT: shelf with CLOSED clean teaching equipment carriers awaiting return. No letters, words, numbers, Chinese text, tick/cross, correct colors, logo, watermark or extra subpanels. Show closed carriers and clean unpowered models only."
+    }
+  ],
+  "edit": "Edit this four-panel campus teaching illustration. Change ONLY the clothing and safety accessories of ALL characters: blue character wears an everyday plain sage-green sweatshirt; orange character wears an everyday plain cream sweater. REMOVE all white laboratory coats, goggles and smooth rubber gloves; hands are blue/orange fluffy paws. These are ordinary office/library/media/data tasks. Keep EXACTLY the same character identity, face, gestures, four-panel arrangement, each panel's action, props, documents, computer screens, camera angle, lighting and palette. Do not add or remove any meaningful task object. Also remove any tiny brand-like letters on camera bodies/documents/screens; leave all text areas blank. No new words, numbers, arrows, tick/cross, or correctness colors. Keep positions of the four scenes absolutely unchanged. Soft matte 3D plush teaching style.",
+  "inspection": {
+    "method": "实际逐张查看最终图片",
+    "scope": "16张最终领域素材；其中8张应用日常服装编辑",
+    "note": "图片在领域内复用；原生文字与标签由前端叠加，不把题目编号写入图片。"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "mode": "Codex built-in image generation",
+  "plates": [
+    {
+      "name": "common-access",
+      "scenes": [
+        "A close-up of blue mascot holding a smartphone: screen shows an incoming chat from an unverified tutor asking for an SMS login code, beside a separate login verification field. Exact neutral Chinese screen labels only: “助教？” “请发验证码” “登录验证” and “••••••”. No real number, no sending code action.",
+        "Blue mascot reads a phone with a fee payment SMS, unknown payment link visible as neutral grey bar, beside a separate course notice sheet. Exact text only “材料审核费” “付款链接” “课程通知”. No paying or security conclusion.",
+        "Blue mascot compares an external backup drive and an open laptop file browser, one backup file icon and a preview window with a question mark indicating not checked. Exact text only “备份完成” “可读性待核验”.",
+        "Blue mascot studies a data spreadsheet with a few empty cells and a pencil nearby, fox mascot points toward an average calculation on a note; no filling of empty cells. Exact text only “原始数据” “缺失” “平均值”."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: A close-up of blue mascot holding a smartphone: screen shows an incoming chat from an unverified tutor asking for an SMS login code, beside a separate login verification field. Exact neutral Chinese screen labels only: “助教？” “请发验证码” “登录验证” and “••••••”. No real number, no sending code action.\nTOP RIGHT: Blue mascot reads a phone with a fee payment SMS, unknown payment link visible as neutral grey bar, beside a separate course notice sheet. Exact text only “材料审核费” “付款链接” “课程通知”. No paying or security conclusion.\nBOTTOM LEFT: Blue mascot compares an external backup drive and an open laptop file browser, one backup file icon and a preview window with a question mark indicating not checked. Exact text only “备份完成” “可读性待核验”.\nBOTTOM RIGHT: Blue mascot studies a data spreadsheet with a few empty cells and a pencil nearby, fox mascot points toward an average calculation on a note; no filling of empty cells. Exact text only “原始数据” “缺失” “平均值”.",
+      "topicIds": [
+        "common-account",
+        "common-payment",
+        "common-restore",
+        "common-fabricate"
+      ],
+      "file": "web/assets/curriculum/topics/common-access.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "6d980ee0dcb2b88e0fc195b116d74e87aea0549b4cc2687a6825a5968bc13c0d",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "common-communication",
+      "scenes": [
+        "Blue mascot sitting across from orange fox interview participant at a small table; phone voice recorder rests between them, blue mascot pauses before touching recorder, fox looks attentive, consent has not been given. Exact text only “访谈” “录音：待确认”.",
+        "Blue mascot compares a printed image license slip and a laptop public-post composition screen with a picture thumbnail. Exact text only “仅限课内展示” “公开发布草稿”. No copyrighted artwork, no green ticks.",
+        "Blue mascot looks at a survey form with several blank fields; simple anonymous headcount chart beside it. Exact text only “统计人数” “身份证号” “家庭住址”. Do not fill any private data; no correct-answer hints.",
+        "Blue mascot before laptop messenger, one attachment has just been sent to a recipient outside a drawn small group circle; puzzled neutral expression. Exact text only “已发送” “课程外接收人”. No corrective action pictured."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot sitting across from orange fox interview participant at a small table; phone voice recorder rests between them, blue mascot pauses before touching recorder, fox looks attentive, consent has not been given. Exact text only “访谈” “录音：待确认”.\nTOP RIGHT: Blue mascot compares a printed image license slip and a laptop public-post composition screen with a picture thumbnail. Exact text only “仅限课内展示” “公开发布草稿”. No copyrighted artwork, no green ticks.\nBOTTOM LEFT: Blue mascot looks at a survey form with several blank fields; simple anonymous headcount chart beside it. Exact text only “统计人数” “身份证号” “家庭住址”. Do not fill any private data; no correct-answer hints.\nBOTTOM RIGHT: Blue mascot before laptop messenger, one attachment has just been sent to a recipient outside a drawn small group circle; puzzled neutral expression. Exact text only “已发送” “课程外接收人”. No corrective action pictured.",
+      "topicIds": [
+        "common-recording",
+        "common-license",
+        "common-minimum",
+        "common-misdirect"
+      ],
+      "file": "web/assets/curriculum/topics/common-communication.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "ec9fbddc2012d6ae4f1c99a904ad25ff8a13d42ff6f7a50146d7edcc1939c0d8",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "common-evidence",
+      "scenes": [
+        "Blue mascot at laptop seeing an anonymous webpage screenshot, plus a closed source book and magnifying glass on desk. Exact text only “匿名帖子” “原始出处待核实”. No book reading or verification conclusion.",
+        "Blue and fox mascot discuss a poster credits sheet with empty contributor rows, alongside notes about data collection and writing. Exact text only “完成者名单” “采集” “分析” “写作”. No names or contribution assignment shown.",
+        "Blue mascot before laptop upload page with cloud icon; intact original folder beside device, anonymous service profile requests original material. Exact text only “免费处理” “上传原始材料” “授权待核实”. No upload occurring.",
+        "Blue mascot reviewing an old sharing-link page on laptop after coursework has ended, calendar on desk and link chain icon. Exact text only “课程已结束” “任何人可查看” “临时共享”. No closing action pictured."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot at laptop seeing an anonymous webpage screenshot, plus a closed source book and magnifying glass on desk. Exact text only “匿名帖子” “原始出处待核实”. No book reading or verification conclusion.\nTOP RIGHT: Blue and fox mascot discuss a poster credits sheet with empty contributor rows, alongside notes about data collection and writing. Exact text only “完成者名单” “采集” “分析” “写作”. No names or contribution assignment shown.\nBOTTOM LEFT: Blue mascot before laptop upload page with cloud icon; intact original folder beside device, anonymous service profile requests original material. Exact text only “免费处理” “上传原始材料” “授权待核实”. No upload occurring.\nBOTTOM RIGHT: Blue mascot reviewing an old sharing-link page on laptop after coursework has ended, calendar on desk and link chain icon. Exact text only “课程已结束” “任何人可查看” “临时共享”. No closing action pictured.",
+      "topicIds": [
+        "common-source",
+        "common-credit",
+        "common-external",
+        "common-retention"
+      ],
+      "file": "web/assets/curriculum/topics/common-evidence.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "20c7b56feaca87456387969c4bd13b7b8cad3adff4c5903d471e9d4abfa74358",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-business-1",
+      "topicIds": [
+        "business-sampling",
+        "business-promise",
+        "business-contract",
+        "business-customer"
+      ],
+      "scenes": [
+        "Blue mascot interviewing three orange fox classmates sitting around one dormitory desk, small survey clipboard next to a laptop with a campus silhouette. Neutral labels “同一宿舍” “调查样本”. No claim of representativeness.",
+        "Blue mascot preparing a promotion webpage on laptop; a clean empty test-results clipboard and new prototype box sit nearby. Neutral labels “招募页草稿” “尚未试验”. Do not display marketing conclusions.",
+        "Blue mascot with a pen held above an UNSIGNED agreement at a meeting desk, orange fox across table; separate role badge says “需求沟通”, another empty chair says “指定负责人”. Agreement title “模拟协议”. No signature or approval.",
+        "Blue mascot viewing customer feedback page on laptop, blank order ID field and a request to attach an ID card on a public comment page; a generic faceless ID-card outline, no personal data. Labels “订单编号” “公开评论区” “证件照片？”."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot interviewing three orange fox classmates sitting around one dormitory desk, small survey clipboard next to a laptop with a campus silhouette. Neutral labels “同一宿舍” “调查样本”. No claim of representativeness.\nTOP RIGHT: Blue mascot preparing a promotion webpage on laptop; a clean empty test-results clipboard and new prototype box sit nearby. Neutral labels “招募页草稿” “尚未试验”. Do not display marketing conclusions.\nBOTTOM LEFT: Blue mascot with a pen held above an UNSIGNED agreement at a meeting desk, orange fox across table; separate role badge says “需求沟通”, another empty chair says “指定负责人”. Agreement title “模拟协议”. No signature or approval.\nBOTTOM RIGHT: Blue mascot viewing customer feedback page on laptop, blank order ID field and a request to attach an ID card on a public comment page; a generic faceless ID-card outline, no personal data. Labels “订单编号” “公开评论区” “证件照片？”.",
+      "file": "web/assets/curriculum/topics/topics-business-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "16e85f7aecb2235734be0fce1e248aec0f08cc3bd3042ea4661bfe6c8d9b87eb",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-business-2",
+      "topicIds": [
+        "business-refund",
+        "business-interest",
+        "business-pricing",
+        "business-pressure"
+      ],
+      "scenes": [
+        "Blue mascot at phone with refund chat, screen sharing icon and transfer request side by side. Labels “退款” “解冻费” “远程控制”. Do not send money, install, or show solution.",
+        "Blue mascot on evaluator desk, project folder beside a small family photo containing blue and fox mascots, empty disclosure form. Labels “评估项目” “亲属参与” “关系说明”. No filled conclusion.",
+        "Blue mascot holds two price sheets above a carton and one identical individual product box. Exact short headings “按件报价” “按箱报价”; no numeric prices or cheaper-choice cues.",
+        "Blue mascot conducting a questionnaire interview, fox participant clearly raises an OPEN PALM politely and leans back from clipboard, phone recorder absent. Single speech bubble away from face says “我不想继续回答了”. Questionnaire partly blank. No coercion or solution."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot at phone with refund chat, screen sharing icon and transfer request side by side. Labels “退款” “解冻费” “远程控制”. Do not send money, install, or show solution.\nTOP RIGHT: Blue mascot on evaluator desk, project folder beside a small family photo containing blue and fox mascots, empty disclosure form. Labels “评估项目” “亲属参与” “关系说明”. No filled conclusion.\nBOTTOM LEFT: Blue mascot holds two price sheets above a carton and one identical individual product box. Exact short headings “按件报价” “按箱报价”; no numeric prices or cheaper-choice cues.\nBOTTOM RIGHT: Blue mascot conducting a questionnaire interview, fox participant clearly raises an OPEN PALM politely and leans back from clipboard, phone recorder absent. Single speech bubble away from face says “我不想继续回答了”. Questionnaire partly blank. No coercion or solution.",
+      "file": "web/assets/curriculum/topics/topics-business-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "06d937ae87f78dfb6f3cd8b291f1b1c3897a7569aba942b61988c9fd1e867437",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-legal-1",
+      "topicIds": [
+        "legal-conflict",
+        "legal-evidence",
+        "legal-authority",
+        "legal-edition"
+      ],
+      "scenes": [
+        "Blue mascot seated between two separate closed case folders, orange fox offers second folder from opposite side of desk. Labels “甲方材料” “乙方卷宗” “单方代理”. Do not combine folders or select a side.",
+        "Blue mascot examining a large printed chat screenshot under magnifier; one small timestamp patch deliberately blurred, pencil hovering at side. Labels “原始截图” “时间模糊”. No fabricated timestamp or editing.",
+        "Blue mascot comparing an authorization sheet labelled “仅限查阅” and an unsigned agreement labelled “代签请求”, pen rests unused. No signing, stamps or approval.",
+        "Blue mascot holding two legal rule books with matching neutral titles, each has a different blank date tab, calendar on desk. Labels “规则文本” “版本甲” “版本乙” “适用日期”. No actual statutes or selected version."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot seated between two separate closed case folders, orange fox offers second folder from opposite side of desk. Labels “甲方材料” “乙方卷宗” “单方代理”. Do not combine folders or select a side.\nTOP RIGHT: Blue mascot examining a large printed chat screenshot under magnifier; one small timestamp patch deliberately blurred, pencil hovering at side. Labels “原始截图” “时间模糊”. No fabricated timestamp or editing.\nBOTTOM LEFT: Blue mascot comparing an authorization sheet labelled “仅限查阅” and an unsigned agreement labelled “代签请求”, pen rests unused. No signing, stamps or approval.\nBOTTOM RIGHT: Blue mascot holding two legal rule books with matching neutral titles, each has a different blank date tab, calendar on desk. Labels “规则文本” “版本甲” “版本乙” “适用日期”. No actual statutes or selected version.",
+      "file": "web/assets/curriculum/topics/topics-legal-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "70ad01f17157a0bcd5447ed3e9a14ecbdaff3223d24c4efe3309dcd64c7fa31c",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-legal-2",
+      "topicIds": [
+        "legal-voluntary",
+        "legal-identity",
+        "legal-hearing",
+        "legal-fact"
+      ],
+      "scenes": [
+        "Two mascots at mediation table with unsigned agreement, orange fox looks puzzled and lifts a paw asking question, blue mascot listens. Labels “模拟调解” and separate small bubble “这条是什么意思？”. No signatures or solution.",
+        "Blue mascot compares two closed case files with labels “案件甲” “案件乙”; both have small party tags “交小安”, handover tray nearby. Numbers need not appear. No file selected.",
+        "A clearly miniature classroom mock courtroom, blue mascot at one lectern with paw half raised, orange fox at other lectern, small empty judge chair in rear. Exact title “模拟庭审”, no actual court emblem or legal decision.",
+        "Blue mascot studies a phone call-log sheet (telephone icons, several unfilled content boxes) beside a question-mark note. Labels “通话记录” “内容未记录”. No invented conversation or conclusion."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Two mascots at mediation table with unsigned agreement, orange fox looks puzzled and lifts a paw asking question, blue mascot listens. Labels “模拟调解” and separate small bubble “这条是什么意思？”. No signatures or solution.\nTOP RIGHT: Blue mascot compares two closed case files with labels “案件甲” “案件乙”; both have small party tags “交小安”, handover tray nearby. Numbers need not appear. No file selected.\nBOTTOM LEFT: A clearly miniature classroom mock courtroom, blue mascot at one lectern with paw half raised, orange fox at other lectern, small empty judge chair in rear. Exact title “模拟庭审”, no actual court emblem or legal decision.\nBOTTOM RIGHT: Blue mascot studies a phone call-log sheet (telephone icons, several unfilled content boxes) beside a question-mark note. Labels “通话记录” “内容未记录”. No invented conversation or conclusion.",
+      "file": "web/assets/curriculum/topics/topics-legal-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "ad98e3b37b9a132ad59733077487c079dc891d6ccb30f295b89ec196f0b40701",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-accounting-1",
+      "topicIds": [
+        "accounting-duplicate",
+        "accounting-separation",
+        "accounting-inventory",
+        "accounting-bankchange"
+      ],
+      "scenes": [
+        "Blue mascot studying two identical invoice-shaped slips beside ledger; each exact slip reads “发票号 A01” “金额 100”. Desk label “模拟报销”. No accounting approval or outcome.",
+        "Blue mascot at work-processing desk with completed transaction page, empty separate reviewer chair across table, two blank signature fields. Labels “经办” “复核” “复核人暂离”. No self-approval.",
+        "Blue mascot compares shelf with TWO sealed teaching boxes and stock sheet showing THREE box icons, recount clipboard in paw. Labels “实物” “账面”. No number editing.",
+        "Blue mascot sees a new chat account sending bank-account-change notice on phone; original vendor contact card lies untouched next to phone. Labels “陌生账号” “变更收款账户” “原联系渠道”. No transfer."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot studying two identical invoice-shaped slips beside ledger; each exact slip reads “发票号 A01” “金额 100”. Desk label “模拟报销”. No accounting approval or outcome.\nTOP RIGHT: Blue mascot at work-processing desk with completed transaction page, empty separate reviewer chair across table, two blank signature fields. Labels “经办” “复核” “复核人暂离”. No self-approval.\nBOTTOM LEFT: Blue mascot compares shelf with TWO sealed teaching boxes and stock sheet showing THREE box icons, recount clipboard in paw. Labels “实物” “账面”. No number editing.\nBOTTOM RIGHT: Blue mascot sees a new chat account sending bank-account-change notice on phone; original vendor contact card lies untouched next to phone. Labels “陌生账号” “变更收款账户” “原联系渠道”. No transfer.",
+      "file": "web/assets/curriculum/topics/topics-accounting-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "23876c67a6103b8f80ac5c5e5618543c8ce31f27b3bcf44e68cb8bd07bd75742",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-accounting-2",
+      "topicIds": [
+        "accounting-blank",
+        "accounting-period",
+        "accounting-voucher",
+        "accounting-disclosure"
+      ],
+      "scenes": [
+        "A close view of blue mascot holding pen above an unsigned blank voucher, AMOUNT and PURPOSE fields visibly empty, fox waiting across desk. Labels “金额” “用途” “签名”. No signing or answer.",
+        "Blue mascot compares an expense slip beside two monthly ledger pages labelled “本月” “下月”, slip rests above both pages, not assigned. Label “费用归属”. No shifted or correct posting shown.",
+        "Blue mascot looking at original paper voucher and an editable ledger display with one cell selected; eraser and small change-log notebook on desk. Labels “原始凭证” “工作记录” “订正记录”. Do not alter original.",
+        "Blue mascot prepares a report screenshot on laptop with a chart and generic personal fields in a separate right-hand column. Labels “课堂展示草稿” “收款账号” “联系方式”. All values abstract dots, no real personal information, no redaction action."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: A close view of blue mascot holding pen above an unsigned blank voucher, AMOUNT and PURPOSE fields visibly empty, fox waiting across desk. Labels “金额” “用途” “签名”. No signing or answer.\nTOP RIGHT: Blue mascot compares an expense slip beside two monthly ledger pages labelled “本月” “下月”, slip rests above both pages, not assigned. Label “费用归属”. No shifted or correct posting shown.\nBOTTOM LEFT: Blue mascot looking at original paper voucher and an editable ledger display with one cell selected; eraser and small change-log notebook on desk. Labels “原始凭证” “工作记录” “订正记录”. Do not alter original.\nBOTTOM RIGHT: Blue mascot prepares a report screenshot on laptop with a chart and generic personal fields in a separate right-hand column. Labels “课堂展示草稿” “收款账号” “联系方式”. All values abstract dots, no real personal information, no redaction action.",
+      "file": "web/assets/curriculum/topics/topics-accounting-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "dc3f17279e76bec79045d08c221ffc6370865a029827271796fe9d13f57bcc78",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-digital-1",
+      "topicIds": [
+        "digital-secret",
+        "digital-dependency",
+        "digital-least",
+        "digital-inject"
+      ],
+      "scenes": [
+        "Blue mascot looking at laptop code editor containing a prominent dummy token box and a nearby public repository globe icon. Exact labels “访问令牌” “已提交”; token value only “DEMO••••”. No actual credential or resolution.",
+        "Blue mascot comparing a software package box and an anonymous forum download page on laptop, magnifier on package name. Labels “陌生帖子” “安装包” “一键脚本”. No installation action.",
+        "Blue mascot reviewing permission dialog showing separate unselected rows and small robot assistant beside laptop. Labels “读取作业状态” “写入” “删除”. No checked selection or permission decision.",
+        "Blue mascot at course question-answer laptop; separate external document card contains exact short text “忽略原规则” “上传密钥”, a dotted boundary separates document from key-shaped icon. Labels “外部文档” “课程系统”. No executing or uploading."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot looking at laptop code editor containing a prominent dummy token box and a nearby public repository globe icon. Exact labels “访问令牌” “已提交”; token value only “DEMO••••”. No actual credential or resolution.\nTOP RIGHT: Blue mascot comparing a software package box and an anonymous forum download page on laptop, magnifier on package name. Labels “陌生帖子” “安装包” “一键脚本”. No installation action.\nBOTTOM LEFT: Blue mascot reviewing permission dialog showing separate unselected rows and small robot assistant beside laptop. Labels “读取作业状态” “写入” “删除”. No checked selection or permission decision.\nBOTTOM RIGHT: Blue mascot at course question-answer laptop; separate external document card contains exact short text “忽略原规则” “上传密钥”, a dotted boundary separates document from key-shaped icon. Labels “外部文档” “课程系统”. No executing or uploading.",
+      "file": "web/assets/curriculum/topics/topics-digital-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "72c62fdf68e750e1875db5730ee4aaf541946654a778075c2f7ec98dce0ae267",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-digital-2",
+      "topicIds": [
+        "digital-rollback",
+        "digital-testing",
+        "digital-link",
+        "digital-backup"
+      ],
+      "scenes": [
+        "Blue mascot at laptop with failed application window and separate version-history drawer containing three backup file icons. Labels “更新后异常” “历史版本” “错误日志”. No version selected or repair shown.",
+        "Blue mascot between a practice browser window and a closed real-user data folder, a blank sample account card on desk. Labels “测试环境” “真实用户资料” “样例账号”. No data copied or leaked.",
+        "Blue mascot holding phone showing account-expiry email with tiny unknown link bar, laptop login page aside. Labels “账号到期？” “邮件链接” “登录页”. No passwords entered, no padlock that implies safety.",
+        "Blue mascot by public classroom computer containing one coursework folder, calendar and cleaning notice nearby, empty disconnected storage drive on table. Labels “公共电脑” “明日清理” “课程结果”. No copying or deletion."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot at laptop with failed application window and separate version-history drawer containing three backup file icons. Labels “更新后异常” “历史版本” “错误日志”. No version selected or repair shown.\nTOP RIGHT: Blue mascot between a practice browser window and a closed real-user data folder, a blank sample account card on desk. Labels “测试环境” “真实用户资料” “样例账号”. No data copied or leaked.\nBOTTOM LEFT: Blue mascot holding phone showing account-expiry email with tiny unknown link bar, laptop login page aside. Labels “账号到期？” “邮件链接” “登录页”. No passwords entered, no padlock that implies safety.\nBOTTOM RIGHT: Blue mascot by public classroom computer containing one coursework folder, calendar and cleaning notice nearby, empty disconnected storage drive on table. Labels “公共电脑” “明日清理” “课程结果”. No copying or deletion.",
+      "file": "web/assets/curriculum/topics/topics-digital-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "dcc86e87d14681ffa60f2ec1dc41fc86797c101cdace727ab820cb2bb3c11383",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-media-1",
+      "topicIds": [
+        "media-portrait",
+        "media-music",
+        "media-news",
+        "media-location"
+      ],
+      "scenes": [
+        "Blue mascot editing a video shot on laptop, thumbnail contains orange fox in foreground and another smaller mascot bystander clearly visible in background; camera on desk. Labels “成片预览” “背景路人”. No blurring or publishing.",
+        "Blue mascot with headphones comparing audio waveform marked “课堂展示” and a separate blank commercial-ad composition panel marked “广告草稿”. Permission slip visible. No copying or authorization outcome.",
+        "Blue mascot at timeline editor with a full interview sentence above and separated snippet blocks below; exact text only “尚未验证有效” on full quote and “验证有效” on selected snippet. No final export.",
+        "Blue mascot photographer stands OUTSIDE a closed barrier at a teaching location, camera in paw, visible sign “禁止进入”. No crossing, no unsafe ledge, empty area beyond barrier."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot editing a video shot on laptop, thumbnail contains orange fox in foreground and another smaller mascot bystander clearly visible in background; camera on desk. Labels “成片预览” “背景路人”. No blurring or publishing.\nTOP RIGHT: Blue mascot with headphones comparing audio waveform marked “课堂展示” and a separate blank commercial-ad composition panel marked “广告草稿”. Permission slip visible. No copying or authorization outcome.\nBOTTOM LEFT: Blue mascot at timeline editor with a full interview sentence above and separated snippet blocks below; exact text only “尚未验证有效” on full quote and “验证有效” on selected snippet. No final export.\nBOTTOM RIGHT: Blue mascot photographer stands OUTSIDE a closed barrier at a teaching location, camera in paw, visible sign “禁止进入”. No crossing, no unsafe ledge, empty area beyond barrier.",
+      "file": "web/assets/curriculum/topics/topics-media-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "763422862a5b44739d894a889fd2b7f167a52a7a520cc7540f670d3d2512836e",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-media-2",
+      "topicIds": [
+        "media-gear",
+        "media-fake",
+        "media-reuse",
+        "media-metadata"
+      ],
+      "scenes": [
+        "Blue mascot and fox at equipment return desk; camera, lens-cap-shaped empty recess and a memory card on tray, checklist unfilled. Labels “器材清单” “镜头盖” “存储卡”. No false complete stamp.",
+        "Blue mascot looking at material-license application page “申请中”, separate image editor displays an empty permit-like template labelled “截图草稿”. No completed forged certificate, fake official seal or correct-answer mark.",
+        "Blue mascot and fox discuss a voice-recording card labelled “仅限课内播放” next to laptop public-channel page labelled “公开频道草稿”. No uploading, no resolution.",
+        "Blue mascot reviews photo file info on laptop with a small location pin beside a generic home map (no actual address). Labels “照片属性” “位置” “公开展示草稿”. No publishing or removing metadata."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot and fox at equipment return desk; camera, lens-cap-shaped empty recess and a memory card on tray, checklist unfilled. Labels “器材清单” “镜头盖” “存储卡”. No false complete stamp.\nTOP RIGHT: Blue mascot looking at material-license application page “申请中”, separate image editor displays an empty permit-like template labelled “截图草稿”. No completed forged certificate, fake official seal or correct-answer mark.\nBOTTOM LEFT: Blue mascot and fox discuss a voice-recording card labelled “仅限课内播放” next to laptop public-channel page labelled “公开频道草稿”. No uploading, no resolution.\nBOTTOM RIGHT: Blue mascot reviews photo file info on laptop with a small location pin beside a generic home map (no actual address). Labels “照片属性” “位置” “公开展示草稿”. No publishing or removing metadata.",
+      "file": "web/assets/curriculum/topics/topics-media-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "631b2096ee86127e2cc95975b4a11a752341dab1d528aec45dd6edc6d1354702",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-humanities-1",
+      "topicIds": [
+        "humanities-citation",
+        "humanities-collection",
+        "humanities-origin",
+        "humanities-oral"
+      ],
+      "scenes": [
+        "Blue mascot studying an open secondary article while original source book is closed out of reach on a shelf, two blank bibliography cards on table. Labels “二手文章” “原典” “转引”. No fake citation or page numbers.",
+        "Blue mascot at archive reading table with a closed fragile teaching-material folder, bag still on floor. A desk use placard reads “限本室使用”. No taking item away.",
+        "Blue mascot examines archival specimen map with a few generic pins, nearby specimen case and map-publication draft. Labels “原始点位” “公开地图草稿” “限制公开”. No real sensitive location, no chosen precision.",
+        "Blue mascot with headphones transcribing oral-history recorder, fox on a small recording thumbnail, different empty text areas for quote and draft. Labels “原始录音” “整理稿”. No invented quotes."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot studying an open secondary article while original source book is closed out of reach on a shelf, two blank bibliography cards on table. Labels “二手文章” “原典” “转引”. No fake citation or page numbers.\nTOP RIGHT: Blue mascot at archive reading table with a closed fragile teaching-material folder, bag still on floor. A desk use placard reads “限本室使用”. No taking item away.\nBOTTOM LEFT: Blue mascot examines archival specimen map with a few generic pins, nearby specimen case and map-publication draft. Labels “原始点位” “公开地图草稿” “限制公开”. No real sensitive location, no chosen precision.\nBOTTOM RIGHT: Blue mascot with headphones transcribing oral-history recorder, fox on a small recording thumbnail, different empty text areas for quote and draft. Labels “原始录音” “整理稿”. No invented quotes.",
+      "file": "web/assets/curriculum/topics/topics-humanities-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "064d18b7623eee02de0713fc7c10b604206f95e9e6af5b95292546290d29c2c2",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-humanities-2",
+      "topicIds": [
+        "humanities-translation",
+        "humanities-copy",
+        "humanities-damage",
+        "humanities-context"
+      ],
+      "scenes": [
+        "Blue mascot compares two text sheets side by side under magnifier; source says exactly “不得公开”, tentative translation slip says “可以公开”. Labels “原文” “机器译文”. No correction or answer shown.",
+        "Blue mascot at copier with a teaching copy permission card and a pile of paper copies, public-group icons on tablet nearby. Labels “指定份数” “教学副本” “公开社群”. No distributing or permissions decision.",
+        "Blue mascot holds an archive envelope showing a small fresh torn corner at an archive desk, repair tape lies unused aside, check-in book nearby. Labels “封套破损” “借阅材料”. No self-repair.",
+        "Blue mascot examines an open article, one highlighted fragment separated from its following paragraph by a magnifier. Exact text on two excerpts only “有人提出此观点” “但后续材料不支持”. Labels “上下文” “节选草稿”. No selected conclusion."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot compares two text sheets side by side under magnifier; source says exactly “不得公开”, tentative translation slip says “可以公开”. Labels “原文” “机器译文”. No correction or answer shown.\nTOP RIGHT: Blue mascot at copier with a teaching copy permission card and a pile of paper copies, public-group icons on tablet nearby. Labels “指定份数” “教学副本” “公开社群”. No distributing or permissions decision.\nBOTTOM LEFT: Blue mascot holds an archive envelope showing a small fresh torn corner at an archive desk, repair tape lies unused aside, check-in book nearby. Labels “封套破损” “借阅材料”. No self-repair.\nBOTTOM RIGHT: Blue mascot examines an open article, one highlighted fragment separated from its following paragraph by a magnifier. Exact text on two excerpts only “有人提出此观点” “但后续材料不支持”. Labels “上下文” “节选草稿”. No selected conclusion.",
+      "file": "web/assets/curriculum/topics/topics-humanities-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "33f7116409401c55367caf79791194e02d367bc887eb4dd79a7ec6c912482e75",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-education-1",
+      "topicIds": [
+        "education-child",
+        "education-ranking",
+        "education-rumor",
+        "education-boundary"
+      ],
+      "scenes": [
+        "Blue mascot trainee holds tablet with an illustrated classroom observation photo, SMALL generic blue/fox child mascots in class, a separate public-post composition card. Labels “教研观察” “公开展示草稿”. No actual children identities or publication.",
+        "Blue mascot reviews a classroom chart with rows of anonymous student icons and scores represented as bars, a blank public exhibition board beside it. Labels “学习情况” “展示草稿”. No insulting text or published names.",
+        "Blue mascot sees an anonymous message on a phone while an unfilled observation record and closed class group page are nearby. Labels “未经核实消息” “观察记录”. No accusations or dissemination.",
+        "Blue mascot before official course message channel on laptop and a phone invitation to private paid group. Labels “课程沟通” “私人付费群” “邀请”. No joining or promises."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot trainee holds tablet with an illustrated classroom observation photo, SMALL generic blue/fox child mascots in class, a separate public-post composition card. Labels “教研观察” “公开展示草稿”. No actual children identities or publication.\nTOP RIGHT: Blue mascot reviews a classroom chart with rows of anonymous student icons and scores represented as bars, a blank public exhibition board beside it. Labels “学习情况” “展示草稿”. No insulting text or published names.\nBOTTOM LEFT: Blue mascot sees an anonymous message on a phone while an unfilled observation record and closed class group page are nearby. Labels “未经核实消息” “观察记录”. No accusations or dissemination.\nBOTTOM RIGHT: Blue mascot before official course message channel on laptop and a phone invitation to private paid group. Labels “课程沟通” “私人付费群” “邀请”. No joining or promises.",
+      "file": "web/assets/curriculum/topics/topics-education-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "08898ea360680b44674e01e5e0d884100d5b7392e82e31c0193eb44f6a0a7459",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-education-2",
+      "topicIds": [
+        "education-observation",
+        "education-contact",
+        "education-equal",
+        "education-tool"
+      ],
+      "scenes": [
+        "Blue mascot observes a single fox pupil looking out the window in classroom, clipboard has one dated observation row and a question-mark thought card. Labels “一次观察” “持续性判断？”. No diagnostic or character conclusions.",
+        "Blue mascot at classroom materials handover desk, visitor fox points to closed student-material folder while a blank identity checklist sits on desk. Labels “来访者” “指定接收名单” “材料交接”. No release or verified-identity badge.",
+        "Blue and fox mascots at classroom activity table, fox uses a simple accessibility communication board, blue mascot holds an activity signup sheet. Labels “课堂活动” “辅助工具” “报名表”. No exclusion action or correctness marker.",
+        "Blue mascot reviews unfamiliar survey app installation page with contact-access popup on tablet. Labels “课堂反馈工具” “读取通讯录？” “来源待核实”. No accepted permission or installed indicator."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot observes a single fox pupil looking out the window in classroom, clipboard has one dated observation row and a question-mark thought card. Labels “一次观察” “持续性判断？”. No diagnostic or character conclusions.\nTOP RIGHT: Blue mascot at classroom materials handover desk, visitor fox points to closed student-material folder while a blank identity checklist sits on desk. Labels “来访者” “指定接收名单” “材料交接”. No release or verified-identity badge.\nBOTTOM LEFT: Blue and fox mascots at classroom activity table, fox uses a simple accessibility communication board, blue mascot holds an activity signup sheet. Labels “课堂活动” “辅助工具” “报名表”. No exclusion action or correctness marker.\nBOTTOM RIGHT: Blue mascot reviews unfamiliar survey app installation page with contact-access popup on tablet. Labels “课堂反馈工具” “读取通讯录？” “来源待核实”. No accepted permission or installed indicator.",
+      "file": "web/assets/curriculum/topics/topics-education-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "1bd5e9c16636cba7d38efc38d3c4176b878d685d520dc2b7af7a717c293f91b6",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-health-1",
+      "topicIds": [
+        "health-model",
+        "health-identity",
+        "health-package",
+        "health-case"
+      ],
+      "scenes": [
+        "Blue mascot at clinical teaching desk with a plastic training mannequin and simulated case report on tablet; a blank public display poster beside it. Labels “模拟病例” “教学训练” “发布草稿”. No real patients or treatment advice.",
+        "Blue mascot compares a CLOSED inert teaching sample tube tagged “样本甲” and a receiving sheet tagged “样本乙”, barcode-like strips prominent. Labels “教学样本” “接收单”. No real biological materials or changing labels.",
+        "Blue mascot inspects a sealed nonclinical plastic teaching-tool package with a visibly torn outer corner, other unopened boxes behind. Labels “教学用品” “外包装破损”. No use, no treatment or sterile claims.",
+        "Blue mascot prepares a simulated clinical lesson slide, one chart and one identity-field column on screen. Labels “教学展示草稿” “健康信息” “联系方式”. Values are dots, no real personal data or redaction outcome."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot at clinical teaching desk with a plastic training mannequin and simulated case report on tablet; a blank public display poster beside it. Labels “模拟病例” “教学训练” “发布草稿”. No real patients or treatment advice.\nTOP RIGHT: Blue mascot compares a CLOSED inert teaching sample tube tagged “样本甲” and a receiving sheet tagged “样本乙”, barcode-like strips prominent. Labels “教学样本” “接收单”. No real biological materials or changing labels.\nBOTTOM LEFT: Blue mascot inspects a sealed nonclinical plastic teaching-tool package with a visibly torn outer corner, other unopened boxes behind. Labels “教学用品” “外包装破损”. No use, no treatment or sterile claims.\nBOTTOM RIGHT: Blue mascot prepares a simulated clinical lesson slide, one chart and one identity-field column on screen. Labels “教学展示草稿” “健康信息” “联系方式”. Values are dots, no real personal data or redaction outcome.",
+      "file": "web/assets/curriculum/topics/topics-health-1.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "7175bb169a268bbd81f3f1d0a49f10d9bc16c4266791e624ce275b6531d30cab",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    },
+    {
+      "name": "topics-health-2",
+      "topicIds": [
+        "health-scope",
+        "health-mix",
+        "health-report",
+        "health-conclusion"
+      ],
+      "scenes": [
+        "Blue mascot watches an inert teaching mannequin demonstration from a marked observation station, equipment tray in background untouched. Labels “仅限观察” “教学演示”. No medical procedure or invasive device use.",
+        "Blue mascot sees a storage table with plastic simulation props and closed real-service supply containers intermixed, some blank label cards lying aside. Labels “模拟用品” “服务用品” “标签待核实”. No medicine or real biological hazard.",
+        "Blue mascot notices a small broken hinge on an inert teaching model, fox points at a classroom schedule nearby. Labels “教具异常” “课程进度”. No continuing use or completed report.",
+        "Blue mascot at a simulated teaching results chart with only three trial cards and an empty conclusion poster. Labels “方法演示” “小样本” “结论草稿”. No efficacy claim, no real clinical result."
+      ],
+      "prompt": "Use case: scientific-educational. Asset type: one landscape educational scene library plate, exactly FOUR equal 2x2 panels with thin straight cream dividers at half width and height, each panel one distinct complete scene, crops must work independently. Reference image is ONLY blue cat campus mascot and orange fox mascot identity, do not copy photograph, people or layout. Soft matte 3D plush style, ivory and pale sage room, light wood, cream/coral accents, gentle lighting, characters faces fully visible. Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph.  Each panel clear large central objects, enough space for readable Chinese labels on objects/screens, no labels across panel edges. Scenes are neutral question premises, never depict correct response, don't add tick/cross, red/green coding or answer. Only stated short Chinese labels, no extra text, no real personal data or brand marks. TOP LEFT: Blue mascot watches an inert teaching mannequin demonstration from a marked observation station, equipment tray in background untouched. Labels “仅限观察” “教学演示”. No medical procedure or invasive device use.\nTOP RIGHT: Blue mascot sees a storage table with plastic simulation props and closed real-service supply containers intermixed, some blank label cards lying aside. Labels “模拟用品” “服务用品” “标签待核实”. No medicine or real biological hazard.\nBOTTOM LEFT: Blue mascot notices a small broken hinge on an inert teaching model, fox points at a classroom schedule nearby. Labels “教具异常” “课程进度”. No continuing use or completed report.\nBOTTOM RIGHT: Blue mascot at a simulated teaching results chart with only three trial cards and an empty conclusion poster. Labels “方法演示” “小样本” “结论草稿”. No efficacy claim, no real clinical result.",
+      "file": "web/assets/curriculum/topics/topics-health-2.png",
+      "editPrompt": "Edit the four-panel target using web/assets/offline/wet-hands.png as original character reference. Restore navy blue fluffy cat, cream forehead stripe/muzzle, brown eyes/eyebrows, red nose, blue fluffy paws and plain sage-green sweatshirt. Orange fox has orange fur paws and cream sweater. Remove all hats/caps, uniforms, ties, badges and blue button shirts, also within photos/screens. Preserve four equal 2x2 panels, exact scene actions, props, task evidence and Chinese labels verbatim. No new words or answer cues. Change only character style and clothing.",
+      "sha256": "9b2466a8ff3027444bfd31bac7718b82c82baba684b8542807cef44c0e3f1965",
+      "visualInspection": {
+        "date": "2026-10-22",
+        "scope": "逐张查看整张四格图：原角色毛绒风格、去制服及帽子、分格位置、题目场景与文字保留；不代表专业答案审定",
+        "checked": true
+      }
+    }
+  ],
+  "characterReference": "web/assets/offline/wet-hands.png",
+  "styleConstraints": "Preserve original navy-blue fluffy cat identity: cream forehead stripe and muzzle, brown eyebrows and round brown eyes, red nose, blue fluffy paws. Blue mascot wears plain sage-green casual sweatshirt; orange fox wears cream sweater with orange fur paws. Bare fluffy heads, no hats/caps, uniforms, ties, badges or epaulettes. Use web/assets/offline/wet-hands.png as original character and fur-rendering reference; no clothing copied from mascot photograph. "
+}

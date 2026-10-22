@@ -1,0 +1,1972 @@
+{
+  "batch": "visual-pilot-2026-10-09",
+  "production_status": "research_only",
+  "byCohort": {
+    "calibration": {
+      "total": 15,
+      "previewPass": 15,
+      "needsReview": 0
+    },
+    "transfer": {
+      "total": 3,
+      "previewPass": 3,
+      "needsReview": 0
+    },
+    "negative": {
+      "total": 6,
+      "previewPass": 0,
+      "needsReview": 6
+    }
+  },
+  "reports": [
+    {
+      "id": "vp01",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "asset_hash:assets/visual-pilot/scene-01.png",
+          "status": "pass",
+          "detail": "实际文件须匹配验收版本，不能替换图片后继续沿用报告"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "手套与电话听筒直接接触"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "作业手套仍未更换"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp02",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "asset_hash:assets/visual-pilot/scene-02.png",
+          "status": "pass",
+          "detail": "实际文件须匹配验收版本，不能替换图片后继续沿用报告"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "手套食指与键盘按键接触"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "实验作业手套未经更换"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp03",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "车辆、充电器与插座连接关系"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "空间属于实验室而不是室外停车区"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp04",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "paired_assets_distinct",
+          "status": "pass",
+          "detail": "不能复用同一张图只改底部结论"
+        },
+        {
+          "name": "comparison_review",
+          "status": "pass",
+          "detail": "对照组需要检查共同条件、允许动作变化与无关差异"
+        },
+        {
+          "name": "comparison_background_lock",
+          "status": "pass",
+          "detail": "共同背景由程序固定，动作区使用明确的归一化几何区域"
+        },
+        {
+          "name": "asset_hash:assets/visual-pilot/scene-03.png",
+          "status": "pass",
+          "detail": "实际文件须匹配验收版本，不能替换图片后继续沿用报告"
+        },
+        {
+          "name": "asset_hash:assets/visual-pilot/scene-04.png",
+          "status": "pass",
+          "detail": "实际文件须匹配验收版本，不能替换图片后继续沿用报告"
+        },
+        {
+          "name": "asset_hash:assets/visual-pilot/scene-05.png",
+          "status": "pass",
+          "detail": "实际文件须匹配验收版本，不能替换图片后继续沿用报告"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "工具接触铁屑且手与铁屑分离"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "手套直接接触铁屑"
+        },
+        {
+          "name": "evidence:E3",
+          "status": "pass",
+          "detail": "嘴部与铁屑方向形成吹气动作"
+        },
+        {
+          "name": "evidence:E4",
+          "status": "pass",
+          "detail": "同一工作台和铁屑对象"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp05",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "插座与纸制物品的位置关系"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp06",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "箱物占用走廊一侧、另一侧仍可见空余"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "按该场地规则禁止自行堆放"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp07",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "箱物覆盖出口前通行路径"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "路径明确为逃生通道"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp08",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "任务规程、着装、防护用品与食品是独立对象"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "装备必须与本次任务对应"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp09",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "四类行为分别呈现，没有顺序箭头"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "修改步骤和离岗均为未经许可"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp10",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "名称字段无法辨认"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "排查对象为易燃液体试剂瓶"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp11",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "信息牌与实验室门口关联"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "责任人与联系字段清楚可读"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp12",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "open_answer_preserved",
+          "status": "pass",
+          "detail": "开放作答保留源答案，不用关键词计分冒充语义判分"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "容器与三个标签字段对应"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp13",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "message_evidence",
+          "status": "pass",
+          "detail": "身份声明、渠道与请求内容同时展示"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "站外银行转账请求与折扣诱因"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "索赔推理没有提供收款身份核验"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp14",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "message_evidence",
+          "status": "pass",
+          "detail": "身份声明、渠道与请求内容同时展示"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "发送者自称教师但身份未核验"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "陌生域名与实名注册请求"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp15",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "message_evidence",
+          "status": "pass",
+          "detail": "身份声明、渠道与请求内容同时展示"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "异常登录话术"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "消息链接与输入密码请求"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp16",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "防护装置与机床关联"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "变更未经许可"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp17",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "answer_range",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "option_mapping_complete",
+          "status": "pass",
+          "detail": "源选项到改编选项逐项对应"
+        },
+        {
+          "name": "answer_mapping",
+          "status": "pass",
+          "detail": "包含A/B选项重排与命题方向反转"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "熟练与授权是两个不同字段"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "老师尚未同意"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp18",
+      "status": "preview_pass",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "supported_interaction",
+          "status": "pass",
+          "detail": "排序需要另行核验完整原题与先后依据，不从清单创建"
+        },
+        {
+          "name": "original_question_type",
+          "status": "pass",
+          "detail": "填空和简答不得静默改为选择，多选不得改为单选"
+        },
+        {
+          "name": "open_answer_preserved",
+          "status": "pass",
+          "detail": "开放作答保留源答案，不用关键词计分冒充语义判分"
+        },
+        {
+          "name": "semantic_review",
+          "status": "pass",
+          "detail": "这项来自内容设计审查，规则不能自行证明语义正确"
+        },
+        {
+          "name": "semantic_receipt",
+          "status": "pass",
+          "detail": "改题、条件、标签或图像依赖变化后，旧内容审查不可沿用"
+        },
+        {
+          "name": "scope_conditions",
+          "status": "pass",
+          "detail": "关键前提与例外须显示且有出处"
+        },
+        {
+          "name": "basis_present",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "evidence_contract",
+          "status": "pass",
+          "detail": "视觉证据是明确事实，不是装饰素材存在即可"
+        },
+        {
+          "name": "visual_template",
+          "status": "pass",
+          "detail": "必须能形成视觉内容"
+        },
+        {
+          "name": "evidence:E1",
+          "status": "pass",
+          "detail": "分类对象与独立收集容器对应"
+        },
+        {
+          "name": "evidence:E2",
+          "status": "pass",
+          "detail": "收集、交接、处置是管理关系，不是自行操作教程"
+        },
+        {
+          "name": "research_boundary",
+          "status": "pass",
+          "detail": "本批为真实预生成素材，应用任意输入在线AI尚未接入"
+        }
+      ]
+    },
+    {
+      "id": "vp19",
+      "status": "needs_review",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "source_answer_conflict",
+          "status": "flag",
+          "detail": "答案ABC包含未经许可擅离岗位，不能把它画为正确行为。"
+        }
+      ]
+    },
+    {
+      "id": "vp20",
+      "status": "needs_review",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "source_answer_conflict",
+          "status": "flag",
+          "detail": "集中答案为C，但C是短袖T恤；源答案与防护装备题意冲突。"
+        }
+      ]
+    },
+    {
+      "id": "vp21",
+      "status": "needs_review",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "single_not_unique",
+          "status": "flag",
+          "detail": "集中答案为B，吸烟和吃东西均可成立，不能直接按单选发布。"
+        }
+      ]
+    },
+    {
+      "id": "vp22",
+      "status": "needs_review",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "missing_scope_exception",
+          "status": "flag",
+          "detail": "关闭水电气的笼统要求未限定必要持续运行设备；先补场景与学校依据。"
+        }
+      ]
+    },
+    {
+      "id": "vp23",
+      "status": "needs_review",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "missing_activity_scope",
+          "status": "flag",
+          "detail": "括号后源答案已恢复，但把实验服、眼镜、手套作为通用入室要求仍缺具体任务。"
+        }
+      ]
+    },
+    {
+      "id": "vp24",
+      "status": "needs_review",
+      "productionEligible": false,
+      "checks": [
+        {
+          "name": "original_source",
+          "status": "pass",
+          "detail": "必须有完整原题、源答案、定位和原始文件哈希"
+        },
+        {
+          "name": "source_identity",
+          "status": "pass",
+          "detail": "原题型、编号与定位不得被改编字段覆盖"
+        },
+        {
+          "name": "source_scope_conflict",
+          "status": "flag",
+          "detail": "原答案笼统禁止玻璃或易碎容器，缺少化学品与容器适配任务条件。"
+        }
+      ]
+    }
+  ],
+  "productionPublished": 0,
+  "online_calls_in_app": 0,
+  "automated_visual_inspection": false,
+  "generatedAt": "2026-10-09T15:14:31.230Z",
+  "realImagegenCalls": 7,
+  "artifacts": [
+    {
+      "id": "phone",
+      "path": "prototype/assets/visual-pilot/scene-01.png",
+      "sha256": "d86ac4ed97129fca30327beb30008135b2c38cac9cf16b9f575f61388063bc77",
+      "kind": "reference_generate",
+      "repeat_of": null
+    },
+    {
+      "id": "keyboard",
+      "path": "prototype/assets/visual-pilot/scene-02.png",
+      "sha256": "d294e41129684dc63b49bb39b9cc5ddf38f511ea602d8b1c04e19fd3e7a6d9d0",
+      "kind": "reference_generate",
+      "repeat_of": null
+    },
+    {
+      "id": "cleanup",
+      "path": "prototype/assets/visual-pilot/scene-03.png",
+      "sha256": "b5bc7ed88c260b70e9fe731ef86892f597f148aa731ff137818b6e22ee544a2c",
+      "kind": "reference_generate",
+      "repeat_of": null
+    },
+    {
+      "id": "cleanup_grip",
+      "path": "prototype/assets/visual-pilot/scene-04.png",
+      "sha256": "2ee11c9d64c86e234e35b9f37faa907b2c7f724beef61d04b0a36cc2f9d71d58",
+      "kind": "reference_edit",
+      "repeat_of": null
+    },
+    {
+      "id": "cleanup_blow",
+      "path": "prototype/assets/visual-pilot/scene-05.png",
+      "sha256": "fe80c679757829a010b0aa5445c895d69d1c850bcee25d33774e608849b50549",
+      "kind": "reference_edit",
+      "repeat_of": null
+    },
+    {
+      "id": "phone_repeat",
+      "path": "prototype/assets/visual-pilot/scene-06.png",
+      "sha256": "f31c28f98787c949b227ca3baa2f717ca347f7a46dfa3bbcf1982d498baf0cb5",
+      "kind": "reference_generate",
+      "repeat_of": "phone"
+    },
+    {
+      "id": "cleanup_repeat",
+      "path": "prototype/assets/visual-pilot/scene-07.png",
+      "sha256": "0e34745970832e39efeaa5bbf82b0ea09a573d1a4f34ab9c074b657e3a4a795a",
+      "kind": "reference_generate",
+      "repeat_of": "cleanup"
+    }
+  ],
+  "answerForms": {
+    "single": 2,
+    "multi": 2,
+    "judge": 12,
+    "fill": 1,
+    "short": 1
+  },
+  "measurementLimits": [
+    "规则通过不等于独立视觉验收；图像观察由同一Codex执行",
+    "6条源题问题由精读预先标注，不能当成自动语义检出率",
+    "迁移组仅3题人工适配，不是盲测自动泛化",
+    "7次生图含2次独立复产；不足以估计长期生成通过率",
+    "未做真实学生学习效果试验，未做安全专家全面审定",
+    "正式发布0题，应用在线生成0次，演示数据库未写入"
+  ],
+  "browserVerification": {
+    "checkedCards": 18,
+    "widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "layoutChecks": 72,
+    "errors": [],
+    "demoDatabaseUnchanged": true,
+    "temporaryDatabaseUsed": true,
+    "compositionPixels": {
+      "method": "Browser renders the actual SVG composition with embedded actual assets at original resolution; protected pixels sampled on a 2px grid excluding 2px clip antialias boundary",
+      "metrics": [
+        {
+          "id": "scene-clip-vp04-1",
+          "protectedSamples": 166995,
+          "changedSamples": 0,
+          "maxChannelDelta": 0
+        },
+        {
+          "id": "scene-clip-vp04-2",
+          "protectedSamples": 166995,
+          "changedSamples": 0,
+          "maxChannelDelta": 0
+        }
+      ]
+    },
+    "screenshots": [
+      "artifacts/visual-pilot/desktop-vp01.png",
+      "artifacts/visual-pilot/desktop-vp04.png",
+      "artifacts/visual-pilot/desktop-vp10.png",
+      "artifacts/visual-pilot/desktop-vp13.png",
+      "artifacts/visual-pilot/desktop-vp18.png",
+      "artifacts/visual-pilot/mobile-vp01.png",
+      "artifacts/visual-pilot/mobile-vp04.png",
+      "artifacts/visual-pilot/mobile-vp12.png",
+      "artifacts/visual-pilot/mobile-vp14.png",
+      "artifacts/visual-pilot/composite-zoom.png",
+      "artifacts/visual-pilot/each-feedback.png",
+      "artifacts/visual-pilot/short-self-review.png",
+      "artifacts/visual-pilot/blocked-originals.png"
+    ]
+  },
+  "imageDifferences": {
+    "method": "RGB absolute difference outside a declared action region; analysis only, no image edits",
+    "action_region_normalized": [
+      0.22,
+      0.13,
+      0.54,
+      0.82
+    ],
+    "threshold_for_changed_pixel": 12,
+    "does_not_prove": "semantic invariance or perfect background preservation",
+    "pairs": [
+      {
+        "base": "scene-03.png",
+        "variant": "scene-04.png",
+        "outside_region_mean_absolute_channel_difference": 2.7044,
+        "outside_region_changed_pixel_fraction": 0.018536
+      },
+      {
+        "base": "scene-03.png",
+        "variant": "scene-05.png",
+        "outside_region_mean_absolute_channel_difference": 10.3231,
+        "outside_region_changed_pixel_fraction": 0.118022
+      }
+    ],
+    "repeated_generations": [
+      {
+        "base": "scene-01.png",
+        "repeat": "scene-06.png",
+        "observation": "电话接触证据保留；手侧、背景和道具位置明显变化，不能当同场景对照选项"
+      },
+      {
+        "base": "scene-03.png",
+        "repeat": "scene-07.png",
+        "observation": "刷毛与铁屑接触、手与铁屑分离保留；背景、机位和构图变化，不能代替共享底图"
+      }
+    ]
+  },
+  "evidenceRequired": 36,
+  "knownNegativeControls": [
+    {
+      "id": "vp19",
+      "source_ref": "QCU-M:96",
+      "issues": [
+        {
+          "code": "source_answer_conflict",
+          "message": "答案ABC包含未经许可擅离岗位，不能把它画为正确行为。"
+        }
+      ]
+    },
+    {
+      "id": "vp20",
+      "source_ref": "JZCIT:8",
+      "issues": [
+        {
+          "code": "source_answer_conflict",
+          "message": "集中答案为C，但C是短袖T恤；源答案与防护装备题意冲突。"
+        }
+      ]
+    },
+    {
+      "id": "vp21",
+      "source_ref": "JZCIT:10",
+      "issues": [
+        {
+          "code": "single_not_unique",
+          "message": "集中答案为B，吸烟和吃东西均可成立，不能直接按单选发布。"
+        }
+      ]
+    },
+    {
+      "id": "vp22",
+      "source_ref": "CPU2025:456",
+      "issues": [
+        {
+          "code": "missing_scope_exception",
+          "message": "关闭水电气的笼统要求未限定必要持续运行设备；先补场景与学校依据。"
+        }
+      ]
+    },
+    {
+      "id": "vp23",
+      "source_ref": "JZCIT:71",
+      "issues": [
+        {
+          "code": "missing_activity_scope",
+          "message": "括号后源答案已恢复，但把实验服、眼镜、手套作为通用入室要求仍缺具体任务。"
+        }
+      ]
+    },
+    {
+      "id": "vp24",
+      "source_ref": "JZCIT:74",
+      "issues": [
+        {
+          "code": "source_scope_conflict",
+          "message": "原答案笼统禁止玻璃或易碎容器，缺少化学品与容器适配任务条件。"
+        }
+      ]
+    }
+  ]
+}

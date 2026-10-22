@@ -1,0 +1,2 @@
+const data=await fetch('/task-rules.json').then(r=>r.json());const id=location.hash.slice(1),root=document.querySelector('#tasks');
+for(const task of data.tasks.filter(t=>!id||t.id===id)){const article=document.createElement('article');for(const [tag,text] of [['small',task.major+' · '+task.code],['h2',task.task],['p','材料：'+task.item],['p','本次约定：'+task.policy],['p','流程先后条件：'+task.steps.join(' → ')],['p','记录所需字段：'+task.recordFields.join('、')]]){const el=document.createElement(tag);el.textContent=text;article.append(el);}root.append(article);}

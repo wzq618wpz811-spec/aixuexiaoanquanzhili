@@ -1,0 +1,172 @@
+[
+  {
+    "id": "CPU2025",
+    "title": "江苏省第十四届大学生安全知识竞赛题库",
+    "publisher": "中国药科大学保卫处",
+    "kind": "xlsx",
+    "url": "https://bwc.cpu.edu.cn/_upload/article/files/75/d8/1239abdf4e0bbd1b09672d7e6bc1/2a9f2049-c568-4537-a21a-447ef824a63e.xlsx",
+    "page": "https://bwc.cpu.edu.cn/7e/16/c8022a228886/page.htm",
+    "http_status": 200,
+    "final_url": "https://bwc.cpu.edu.cn/_upload/article/files/75/d8/1239abdf4e0bbd1b09672d7e6bc1/2a9f2049-c568-4537-a21a-447ef824a63e.xlsx",
+    "sha256": "6b9de4c6150dc251876dd7ddb501186631f171ae064fe013cd6eac89c6aa3e75",
+    "bytes": 199031,
+    "sheets": [
+      {
+        "name": "2025年题库组稿（350+300+350版）",
+        "nonempty_rows": 1001
+      }
+    ],
+    "characters": 374978,
+    "status": "extracted",
+    "captured_at": "2026-10-09T12:51:22.587050+00:00",
+    "local_archive": "research/question-banks/CPU2025.xlsx"
+  },
+  {
+    "id": "SZIT-G",
+    "title": "实验室安全知识题库 通识类",
+    "publisher": "szitu.edu.cn教务域名，发布单位署名未完成核验",
+    "kind": "pdf",
+    "url": "https://jwc.szitu.edu.cn/storage/files/通识类安全知识.pdf",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='jwc.szitu.edu.cn', port=443): Max retries exceeded with url: /storage/files/%E9%80%9A%E8%AF%86%E7%B1%BB%E5%AE%89%E5%85%A8%E7%9F%A5%E8%AF%86.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))",
+    "local_archive": "research/question-banks/SZIT-G.pdf"
+  },
+  {
+    "id": "SZIT-M",
+    "title": "实验室安全知识题库 机械建筑类",
+    "publisher": "szitu.edu.cn教务域名，发布单位署名未完成核验",
+    "kind": "pdf",
+    "url": "https://jwc.szitu.edu.cn/storage/files/机械建筑类安全知识.pdf",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='jwc.szitu.edu.cn', port=443): Max retries exceeded with url: /storage/files/%E6%9C%BA%E6%A2%B0%E5%BB%BA%E7%AD%91%E7%B1%BB%E5%AE%89%E5%85%A8%E7%9F%A5%E8%AF%86.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))",
+    "local_archive": "research/question-banks/SZIT-M.pdf"
+  },
+  {
+    "id": "SHNU",
+    "title": "大学生安全教育习题集",
+    "publisher": "上海师范大学保卫处公开文件",
+    "kind": "pdf",
+    "url": "https://bwch.shnu.edu.cn/_upload/article/files/ea/1b/fab6b9664b8fbe85dba0ba23de53/ad99f691-15ed-4127-9ed1-d19faf2d2509.pdf",
+    "http_status": 200,
+    "final_url": "https://bwch.shnu.edu.cn/_upload/article/files/ea/1b/fab6b9664b8fbe85dba0ba23de53/ad99f691-15ed-4127-9ed1-d19faf2d2509.pdf",
+    "sha256": "4ac19f0f46d870ed1b3845cddfc4b8b561405a370bfe2995df513b591314b27b",
+    "bytes": 7586248,
+    "pages": 144,
+    "characters": 3203,
+    "status": "downloaded_image_pdf",
+    "captured_at": "2026-10-09T12:51:53.012670+00:00",
+    "read_count": 0,
+    "note": "144页扫描PDF，文本抽取为空；未完成OCR，不计阅读数",
+    "local_archive": "research/question-banks/SHNU.pdf"
+  },
+  {
+    "id": "NWU219",
+    "title": "实验室安全考试 219道题",
+    "publisher": "西北大学生命科学学院",
+    "kind": "html",
+    "url": "https://skjxsf.nwu.edu.cn/ksdh/sysaqks.htm",
+    "http_status": 200,
+    "final_url": "https://skjxsf.nwu.edu.cn/ksdh/sysaqks.htm",
+    "sha256": "3eccac5ffc25c469302c95cef11213805093c4402883b4330de48a6851d2b7e9",
+    "bytes": 235956,
+    "characters": 16184,
+    "status": "extracted",
+    "captured_at": "2026-10-09T12:51:25.191436+00:00",
+    "local_archive": "research/question-banks/NWU219.html"
+  },
+  {
+    "id": "TSU200",
+    "title": "实验室安全试题库 200道",
+    "publisher": "泰山学院化学相关学院",
+    "kind": "html",
+    "url": "https://chem.tsu.edu.cn/2019/0622/c445a48906/page.htm",
+    "http_status": 200,
+    "final_url": "https://chem.tsu.edu.cn/2019/0622/c445a48906/page.htm",
+    "sha256": "e102e316cd5fc7b798698f5ed51c1bf216e464f9f529cb9425371a18bd7bd3b8",
+    "bytes": 410587,
+    "characters": 10883,
+    "status": "extracted",
+    "captured_at": "2026-10-09T12:51:24.988913+00:00",
+    "extracted_items": 195,
+    "note": "标题称200题，正文标号缺182、188—191；不补造缺题",
+    "local_archive": "research/question-banks/TSU200.html"
+  },
+  {
+    "id": "QCU-M",
+    "title": "金工实习安全教育题库",
+    "publisher": "青岛城市学院实验室管理中心",
+    "kind": "html",
+    "url": "https://lab.qcuwh.edu.cn/info/1004/1736.htm",
+    "http_status": 200,
+    "final_url": "https://lab.qcuwh.edu.cn/info/1004/1736.htm",
+    "sha256": "b19e1e1b850db7112d78a9385659c047787114f786f246dde9c35fe246b5c413",
+    "bytes": 88541,
+    "characters": 6914,
+    "status": "extracted",
+    "captured_at": "2026-10-09T12:51:27.777904+00:00",
+    "local_archive": "research/question-banks/QCU-M.html"
+  },
+  {
+    "id": "QCU-G",
+    "title": "实验室安全知识题库 理工类",
+    "publisher": "青岛城市学院实验室管理中心",
+    "kind": "html",
+    "url": "https://lab.qcuwh.edu.cn/info/1004/1738.htm",
+    "http_status": 200,
+    "final_url": "https://lab.qcuwh.edu.cn/info/1004/1738.htm",
+    "sha256": "a0b529d692a9d13880689169d9f909d4ca61c8fa994aac820efee2d35580c6bb",
+    "bytes": 107593,
+    "characters": 7012,
+    "status": "extracted",
+    "captured_at": "2026-10-09T12:51:28.385546+00:00",
+    "local_archive": "research/question-banks/QCU-G.html"
+  },
+  {
+    "id": "JZCIT",
+    "title": "实验室安全知识考试题库",
+    "publisher": "焦作工贸职业学院",
+    "kind": "html",
+    "url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+    "http_status": 200,
+    "final_url": "https://www.jzcit.edu.cn/2024/0627/c1136a18429/page.htm",
+    "sha256": "bbf654447c285faab76c2dffd45dfb02c8eb26c9f957a00c2fc54efde34144b0",
+    "bytes": 109808,
+    "characters": 6136,
+    "status": "extracted",
+    "captured_at": "2026-10-09T12:51:28.503368+00:00",
+    "local_archive": "research/question-banks/JZCIT.html"
+  },
+  {
+    "id": "LZU",
+    "title": "公开实验室安全题库PDF",
+    "publisher": "兰州大学草地农业科技学院服务器",
+    "kind": "pdf",
+    "url": "https://caoye.lzu.edu.cn/caoyenew/upload/files/N20210708164726.pdf",
+    "pages": 62,
+    "status": "downloaded_and_sample_read",
+    "read_count": 147,
+    "sha256": "704e48cef5b2df7e3a995e35d419666406f5f7b8276995fad26a096641820ea5",
+    "local_archive": "research/question-banks/LZU.pdf",
+    "note": "未确认编制者与现行版本；完整精读范围见lzu-reading.md"
+  },
+  {
+    "id": "SICAU",
+    "url": "https://jdc.sicau.edu.cn/info/1621/3454.htm",
+    "status": "blocked_captcha",
+    "read_count": 0,
+    "note": "附件需验证码，未下载，不计题目"
+  },
+  {
+    "id": "NWU-XLS",
+    "url": "https://lab.nwu.edu.cn/info/1146/1444.htm",
+    "status": "blocked_captcha",
+    "read_count": 0,
+    "note": "XLS附件需验证码，未下载，不计题目"
+  },
+  {
+    "id": "HRBEU",
+    "url": "https://yt.hrbeu.edu.cn/2022/0520/c11253a292321/page.htm",
+    "status": "failed_404",
+    "read_count": 0
+  }
+]

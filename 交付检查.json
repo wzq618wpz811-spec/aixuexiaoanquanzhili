@@ -1,0 +1,9 @@
+{
+  "createdAt": "2026-10-22T02:30:25.514Z",
+  "publishedQuestions": 6171,
+  "containsApiKeys": false,
+  "containsStudentRecords": false,
+  "containsJobs": false,
+  "containsUnreviewedQuestions": false,
+  "note": "源码和现有正式图片可离线运行；生成新内容需要使用接收方自己的服务端API配置。正式题不足10道的专业仍不可开始整组练习。"
+}

@@ -1,0 +1,472 @@
+[
+  {
+    "source_ref": "CPU2025:434",
+    "locator": "2025年题库组稿（350+300+350版）!D434:F434",
+    "topic_paraphrase": "手套跨区接触",
+    "source_type": "判断题",
+    "proposed_template": "T01",
+    "required_adaptation": "手套使用前情境与接触对象必须明确",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:80",
+    "locator": "文本序位80 / 印刷题号80",
+    "topic_paraphrase": "实验手套接触公共物品",
+    "source_type": "判断题",
+    "proposed_template": "T01",
+    "required_adaptation": "同知识点跨库重复，不算新知识点",
+    "review_status": "重复关联",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "QCU-M:18",
+    "locator": "文本序位18 / 印刷题号18",
+    "topic_paraphrase": "清屑工具",
+    "source_type": "单选",
+    "proposed_template": "T02",
+    "required_adaptation": "只变工具和动作，保留设备状态",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "QCU-M:68",
+    "locator": "文本序位68 / 印刷题号68",
+    "topic_paraphrase": "任务与手套适配",
+    "source_type": "单选",
+    "proposed_template": "T02",
+    "required_adaptation": "机械加工与搬运条件分别标明",
+    "review_status": "设备条件复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "QCU-M:89",
+    "locator": "文本序位89 / 印刷题号89",
+    "topic_paraphrase": "操作者站位与护目镜",
+    "source_type": "多选",
+    "proposed_template": "T02",
+    "required_adaptation": "多个条件不能压成只看眼镜",
+    "review_status": "复合条件",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "JZCIT:42",
+    "locator": "文本序位42 / 印刷题号42",
+    "topic_paraphrase": "眼部防护装备",
+    "source_type": "选择题",
+    "proposed_template": "T03",
+    "required_adaptation": "眼部器材需规范图，不随意画形状",
+    "review_status": "装备核验",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "JZCIT:4",
+    "locator": "文本序位4 / 印刷题号4",
+    "topic_paraphrase": "危险标志组成",
+    "source_type": "选择题",
+    "proposed_template": "T03",
+    "required_adaptation": "旧分类/标志版本需核验，禁止让模型画伪标志",
+    "review_status": "版本复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "NWU219:140",
+    "locator": "文本序位140 / 印刷题号140",
+    "topic_paraphrase": "辐射入口标识",
+    "source_type": "判断题",
+    "proposed_template": "T03",
+    "required_adaptation": "标识来自规范素材，人物不是判断依据",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:17",
+    "locator": "文本序位17 / 印刷题号17",
+    "topic_paraphrase": "插座旁物品",
+    "source_type": "判断题",
+    "proposed_template": "T04",
+    "required_adaptation": "只能找可见物体和空间关系",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:57",
+    "locator": "文本序位57 / 印刷题号57",
+    "topic_paraphrase": "走廊物品堆放",
+    "source_type": "判断题",
+    "proposed_template": "T04",
+    "required_adaptation": "通道身份和边界要清楚",
+    "review_status": "场地规则复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:360",
+    "locator": "2025年题库组稿（350+300+350版）!D360:F360",
+    "topic_paraphrase": "器材取用受阻",
+    "source_type": "判断题",
+    "proposed_template": "T04",
+    "required_adaptation": "遮挡位置可见，不能用透视猜宽度",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:425",
+    "locator": "2025年题库组稿（350+300+350版）!D425:F425",
+    "topic_paraphrase": "入室准备",
+    "source_type": "多选题",
+    "proposed_template": "T05",
+    "required_adaptation": "复合检查项不具有自动先后关系",
+    "review_status": "清单不排序",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:456",
+    "locator": "2025年题库组稿（350+300+350版）!D456:F456",
+    "topic_paraphrase": "离室检查",
+    "source_type": "多选题",
+    "proposed_template": "T05",
+    "required_adaptation": "补齐持续运行设备与管理例外",
+    "review_status": "条件复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "QCU-M:86",
+    "locator": "文本序位86 / 印刷题号86",
+    "topic_paraphrase": "开机前核查",
+    "source_type": "多选",
+    "proposed_template": "T05",
+    "required_adaptation": "设备型号和状态明确，多项核查",
+    "review_status": "设备条件复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:2",
+    "locator": "文本序位2 / 印刷题号2",
+    "topic_paraphrase": "插座容量与负荷",
+    "source_type": "判断题",
+    "proposed_template": "T06",
+    "required_adaptation": "必须提供额定值和单位，不能按孔数猜",
+    "review_status": "数值依据复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:10",
+    "locator": "文本序位10 / 印刷题号10",
+    "topic_paraphrase": "总负荷与支路负荷",
+    "source_type": "判断题",
+    "proposed_template": "T06",
+    "required_adaptation": "多个数值关系，图像不凭空创造额定值",
+    "review_status": "数值依据复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:19",
+    "locator": "文本序位19 / 印刷题号19",
+    "topic_paraphrase": "未验证无电",
+    "source_type": "判断题",
+    "proposed_template": "T06",
+    "required_adaptation": "指示灯外观不是电气状态证明",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "QCU-M:78",
+    "locator": "文本序位78 / 印刷题号78",
+    "topic_paraphrase": "照明电压范围",
+    "source_type": "单选",
+    "proposed_template": "T06",
+    "required_adaptation": "设备环境决定阈值，保留旧答案待核验",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:405",
+    "locator": "2025年题库组稿（350+300+350版）!D405:F405",
+    "topic_paraphrase": "化学品标签与存放",
+    "source_type": "单选题",
+    "proposed_template": "T07",
+    "required_adaptation": "名称与危害必须可读，位置仅是线索",
+    "review_status": "标签依据复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:463",
+    "locator": "2025年题库组稿（350+300+350版）!D463:F463",
+    "topic_paraphrase": "模糊标签",
+    "source_type": "判断题",
+    "proposed_template": "T07",
+    "required_adaptation": "可观察缺失信息，不能凭外观猜内容物",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:70",
+    "locator": "文本序位70 / 印刷题号70",
+    "topic_paraphrase": "门牌责任信息",
+    "source_type": "判断题",
+    "proposed_template": "T07",
+    "required_adaptation": "用虚构示例信息，学校实际流程另配",
+    "review_status": "学校配置",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:454",
+    "locator": "2025年题库组稿（350+300+350版）!D454:F454",
+    "topic_paraphrase": "废液去向",
+    "source_type": "多选题",
+    "proposed_template": "T08",
+    "required_adaptation": "分类标签与处置记录分层，不用颜色辨物性",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:457",
+    "locator": "2025年题库组稿（350+300+350版）!D457:F457",
+    "topic_paraphrase": "储存条件组合",
+    "source_type": "多选题",
+    "proposed_template": "T08",
+    "required_adaptation": "多项条件须同时保留，相容性不由图推断",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "NWU219:88",
+    "locator": "文本序位88 / 印刷题号88",
+    "topic_paraphrase": "生物废物类别",
+    "source_type": "判断题",
+    "proposed_template": "T08",
+    "required_adaptation": "生物风险由标签与场景提供",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "NWU219:97",
+    "locator": "文本序位97 / 印刷题号97",
+    "topic_paraphrase": "试剂搬运组合",
+    "source_type": "单选题",
+    "proposed_template": "T08",
+    "required_adaptation": "应由现行相容性与容器条件核验，不画混合实验",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:207",
+    "locator": "2025年题库组稿（350+300+350版）!D207:F207",
+    "topic_paraphrase": "站外转账优惠",
+    "source_type": "判断题",
+    "proposed_template": "T09",
+    "required_adaptation": "渠道和请求动作可视化为聊天记录",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:248",
+    "locator": "2025年题库组稿（350+300+350版）!D248:F248",
+    "topic_paraphrase": "视频身份可信度",
+    "source_type": "判断题",
+    "proposed_template": "T09",
+    "required_adaptation": "视频外观与身份核验分开",
+    "review_status": "条件复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:538",
+    "locator": "2025年题库组稿（350+300+350版）!D538:F538",
+    "topic_paraphrase": "教师身份邮件",
+    "source_type": "单选题",
+    "proposed_template": "T09",
+    "required_adaptation": "保留冒充身份与陌生链接两类证据",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:585",
+    "locator": "2025年题库组稿（350+300+350版）!D585:F585",
+    "topic_paraphrase": "账号异常短信",
+    "source_type": "判断题",
+    "proposed_template": "T09",
+    "required_adaptation": "使用示例域名，无真实可点击诈骗链接",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:403",
+    "locator": "2025年题库组稿（350+300+350版）!D403:F403",
+    "topic_paraphrase": "设备火情条件",
+    "source_type": "单选题",
+    "proposed_template": "T10",
+    "required_adaptation": "题干中的安全条件不可删，不能变成全流程排序",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:447",
+    "locator": "2025年题库组稿（350+300+350版）!D447:F447",
+    "topic_paraphrase": "培训与操作授权",
+    "source_type": "判断题",
+    "proposed_template": "T10",
+    "required_adaptation": "培训不是所有任务的通用许可",
+    "review_status": "条件复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "QCU-M:7",
+    "locator": "文本序位7 / 印刷题号7",
+    "topic_paraphrase": "未知材料加工",
+    "source_type": "多选",
+    "proposed_template": "T10",
+    "required_adaptation": "未知就是未知，模型不可补造物性",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:502",
+    "locator": "2025年题库组稿（350+300+350版）!D502:F502",
+    "topic_paraphrase": "校园交通长情境",
+    "source_type": "多选题",
+    "proposed_template": "T11",
+    "required_adaptation": "人名不一致需先修复，原多选不变单选",
+    "review_status": "源题缺陷",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:165",
+    "locator": "2025年题库组稿（350+300+350版）!D165:F165",
+    "topic_paraphrase": "转账后处置线索",
+    "source_type": "多选题",
+    "proposed_template": "T11",
+    "required_adaptation": "证据保存与求助是多项，不强制唯一顺序",
+    "review_status": "金融流程复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:295",
+    "locator": "2025年题库组稿（350+300+350版）!D295:F295",
+    "topic_paraphrase": "帮助被骗同学",
+    "source_type": "多选题",
+    "proposed_template": "T11",
+    "required_adaptation": "角色、证据、求助对象分别呈现",
+    "review_status": "普通内容设计",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:302",
+    "locator": "2025年题库组稿（350+300+350版）!D302:F302",
+    "topic_paraphrase": "相对风向站位",
+    "source_type": "单选题",
+    "proposed_template": "T12",
+    "required_adaptation": "需要明确风向、场景和适用条件",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:521",
+    "locator": "2025年题库组稿（350+300+350版）!D521:F521",
+    "topic_paraphrase": "信号与指挥条件",
+    "source_type": "判断题",
+    "proposed_template": "T12",
+    "required_adaptation": "不能只画红绿灯省略题干优先条件",
+    "review_status": "法规复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "CPU2025:527",
+    "locator": "2025年题库组稿（350+300+350版）!D527:F527",
+    "topic_paraphrase": "路段通行判断",
+    "source_type": "单选题",
+    "proposed_template": "T12",
+    "required_adaptation": "视距、交通条件不能从静态图臆造",
+    "review_status": "法规复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:37",
+    "locator": "文本序位37 / 印刷题号37",
+    "topic_paraphrase": "培训准入",
+    "source_type": "判断题",
+    "proposed_template": "T14",
+    "required_adaptation": "用状态记录，不从穿着推断合格",
+    "review_status": "学校配置",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:41",
+    "locator": "文本序位41 / 印刷题号41",
+    "topic_paraphrase": "特殊作业资格",
+    "source_type": "判断题",
+    "proposed_template": "T14",
+    "required_adaptation": "资格类别和现行规定需核验",
+    "review_status": "制度复核",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "TSU200:77",
+    "locator": "文本序位77 / 印刷题号77",
+    "topic_paraphrase": "钥匙权限",
+    "source_type": "判断题",
+    "proposed_template": "T14",
+    "required_adaptation": "权限是显式信息，不是人物年龄",
+    "review_status": "学校配置",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "QCU-M:96",
+    "locator": "文本序位96 / 印刷题号96",
+    "topic_paraphrase": "答案包含离岗选项",
+    "source_type": "多选",
+    "proposed_template": "BLOCK",
+    "required_adaptation": "题干与答案逻辑冲突，停止生图",
+    "review_status": "源题缺陷",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "JZCIT:10",
+    "locator": "文本序位10 / 印刷题号10",
+    "topic_paraphrase": "单选不唯一",
+    "source_type": "选择题",
+    "proposed_template": "BLOCK",
+    "required_adaptation": "多个选项可成立，集中答案不能直接用",
+    "review_status": "源题缺陷",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "JZCIT:8",
+    "locator": "文本序位8 / 印刷题号8",
+    "topic_paraphrase": "答案表与题意不匹配",
+    "source_type": "选择题",
+    "proposed_template": "BLOCK",
+    "required_adaptation": "源答案C与防护装备选项位置冲突",
+    "review_status": "源题缺陷",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "NWU219:106",
+    "locator": "文本序位106 / 印刷题号106",
+    "topic_paraphrase": "旧急救顺序",
+    "source_type": "单选题",
+    "proposed_template": "T13",
+    "required_adaptation": "只有顺序单选形式证据，不采纳医疗答案",
+    "review_status": "禁止直接发布",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "NWU219:107",
+    "locator": "文本序位107 / 印刷题号107",
+    "topic_paraphrase": "旧急救顺序",
+    "source_type": "单选题",
+    "proposed_template": "T13",
+    "required_adaptation": "先核验现行专业依据，不复制操作步骤",
+    "review_status": "禁止直接发布",
+    "publication_status": "research_only"
+  },
+  {
+    "source_ref": "LZU:p55:q1103",
+    "locator": "PDF物理页55，题号1103",
+    "topic_paraphrase": "四步排列单选",
+    "source_type": "选择题",
+    "proposed_template": "T13",
+    "required_adaptation": "原题不是拖排，操作先后需现行SOP；原排列只做结构研究",
+    "review_status": "专业复核",
+    "publication_status": "research_only"
+  }
+]

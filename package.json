@@ -1,0 +1,20 @@
+{
+  "name": "campus-safety-studio",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test test/core.test.mjs test/local-product.test.mjs test/batches.test.mjs test/submission.test.mjs test/offline.test.mjs test/revision.test.mjs",
+    "submission": "node scripts/build/submission.mjs",
+    "prepare:offline": "node scripts/maintenance/prepare-offline-product.mjs",
+    "verify:offline": "node scripts/verify/verify-offline-browser.mjs",
+    "test:pilot": "node --test test/visual-pilot.test.mjs",
+    "verify:browser": "node scripts/verify/verify-browser.mjs",
+    "verify:pilot": "node scripts/verify/verify-visual-pilot-browser.mjs",
+    "templates:export": "node scripts/build/export-template-data.mjs"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

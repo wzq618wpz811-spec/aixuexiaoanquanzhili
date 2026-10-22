@@ -1,0 +1,161 @@
+{
+  "provider": "Codex built-in image generation",
+  "liveProductApiCalled": false,
+  "reference": "web/assets/character-atlas.png",
+  "assets": [
+    {
+      "id": "wet-hands",
+      "file": "web/assets/offline/wet-hands.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 educational question scene for a campus safety quiz. Use the attached reference ONLY for the blue mascot's identity (navy blue fluffy cat-like mascot, cream muzzle and central forehead stripe), not its clothing or goggles. Match existing warm soft matte 3D plush teaching illustration; ivory, sage, light wood and neutral grey; even soft daylight, clear practical evidence, mobile-friendly medium close composition. Primary scene: Neutral campus computer workstation. Blue fluffy mascot, wearing sage green casual sweatshirt, no lab coat, no gloves and no goggles, seated at an ordinary desktop computer. CLOSE view of both visibly wet hands with a few water droplets, hovering well away from keyboard, NOT touching electricity, water not poured onto equipment. Monitor blank muted screen. Main evidence hands clear. No accident. No letters, words, digits, Chinese text, caption, watermark, tick/cross, correctness symbols or color-coded answers. One single scene, no collage. Save as reusable scene asset.",
+      "sha256": "62da5fee2a4b4dcd5f8e262e69239a675c9ce01aed7ad56b395d689165db07bb",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "cable-check",
+      "file": "web/assets/offline/cable-check.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: Close-up tabletop inspection of an UNPLUGGED electrical cord with one visibly cracked outer sheath, NOT exposed bare live copper. Disconnected plug rests visibly on table. Blue fluffy mascot in casual sage sweatshirt stands behind, examining from a distance, hands away. Ordinary campus equipment bench, neutral closed device nearby. Focus on cable outer insulation. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "0e52c4c4ffa3574e7904388ebee8119b7a3fed2c8ecf028a25ab1d4bd594b90b",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "equipment-manual",
+      "file": "web/assets/offline/equipment-manual.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: Campus practical learning bench with a closed neutral grey electric instrument, a detached plug on tabletop, a thick OPEN BLANK instruction booklet beside it, and an ordinary clipboard with blank paper. Blue fluffy mascot wearing casual sage sweatshirt considers booklet and device. Do not depict a repair, fire, wetness, electronics internals or any action determining correct answer. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "e2a5aee6b5556b5efcfc85f8181e73e8a324f27814cdf315cc78aedfc14f6d77",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "evacuation",
+      "file": "web/assets/offline/evacuation.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: Interior of a university corridor with a clearly recognizable enclosed staircase through an open stairwell doorway at left and closed double elevator doors at right. Blue fluffy mascot in casual sage sweatshirt at decision point, not entering either. Clear floor, no smoke, no fire, no signs, no letters, no green arrows. Both destinations equally lit and visible. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "e88140c098197d15a819887fcbfc1ffe89fab5f612badb3f13067cb01730f772",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "fire-equipment",
+      "file": "web/assets/offline/fire-equipment.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: University teaching building interior wall and small recessed cabinet holding two plain red fire extinguishers firmly upright in their brackets, with simple handles, hose and pin mechanically plausible. Blue fluffy mascot in casual sage sweatshirt nearby, looking at equipment without using or moving it. Clear floor. No fire, no smoke, no labels, no answer cue. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "31a78f3faa7224d84f7969a70cea32e394c85ff9214a4a75b3c6be61c2d5e63b",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "training",
+      "file": "web/assets/offline/training.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: University practical classroom entrance, doorway, blue fluffy mascot in sage casual sweatshirt and orange fluffy mascot in pale beige sweater meeting before entry. Blue mascot holds a blank tablet and orange mascot a blank handbook. Both wearing normal appropriate closed shoes. Neutral qualification status; nobody enters, no certificates or ticks. A desk in background, NO chemical hazards or lab PPE. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "35cf1eb9dfcae217bb4e67ae5010636bf710cbcb44f0f134cac999574acb212d",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "report",
+      "file": "web/assets/offline/report.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: University study room incident reporting context. Blue fluffy mascot in sage casual sweatshirt standing by desk holding ordinary smartphone near ear to speak, screen turned away. Orange fluffy mascot in beige sweater nearby listens. A small upright grey desktop device on desk, intact. No injuries, no fire, no smoke, no number/text shown. Emphasize making contact, no invented emergency details. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "1f3fb0a68811fae7618e2c75a7b40a4fbc2cb268377f8508e397ece76ef45675",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "first-aid",
+      "file": "web/assets/offline/first-aid.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: A campus teaching room emergency resources corner. CLOSED plain white first aid cabinet or box on wall with a simple small red plus symbol, transparent outer door showing neatly packed bandage rolls, no medicines or wording. Blue fluffy mascot in casual sage sweatshirt looking at cabinet from a step away, not treating someone. Blank wall notice board adjacent, no text. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "ee424aea99d644cd62a76bf59b8bfe48e006e8b5b5a75672d15a12b3909bfe7b",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "glass-waste",
+      "file": "web/assets/offline/glass-waste.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: Close-up university workbench: several clearly visible clean broken transparent glass pieces on an empty small tray, nobody touching shards. A sturdy plain grey thick-walled collection container with broad opening and lid beside it, plus folded hand brush resting on desk. Blue fluffy mascot in sage sweatshirt watching, hands away. No sharp injuries, no blood, no chemicals, no rubbish bucket labels. Neutral decision before cleanup. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "d081da61df43832a47e991e5cde7c948e25264bf152a3c494a8a10113474e91a",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "computer-security",
+      "file": "web/assets/offline/computer-security.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: Campus computer learning desk. Blue fluffy mascot in sage casual sweatshirt looking at computer screen showing TWO blank neutral rectangular popup windows and an envelope icon, absolutely no letters or digits. One hand resting safely on desk, not clicking. Smartphone beside keyboard. Ordinary tidy room, no goggles or lab coat. Leave screen uncluttered for programmatic dialogue overlay. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "4dd76b1ab2d0e69e3c079264f70503392e9ea4dc4abc6b0aceb84554e68ae236",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "mechanical",
+      "file": "web/assets/offline/mechanical.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: University engineering practical workshop. A small realistic enclosed benchtop lathe with transparent guard CLOSED, chuck stationary, power switch neutral. Blue fluffy mascot in sage workwear with sleeves fitted and safety goggles, NO GLOVES, stands safely away with hands by sides. No hair or fabric near spindle, no open chips on floor, no accident. Neutral pre-operation observation scene. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "8ac097afd688eab969ef8acd952713536963e84a1092fbd0c77f2057ffdc87dc",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "chemical-storage",
+      "file": "web/assets/offline/chemical-storage.png",
+      "prompt": "Use case: scientific-educational. Asset type: one landscape 3:2 campus safety question illustration. Use attached reference ONLY for blue mascot identity (navy fluffy cat-like mascot with cream muzzle and central forehead stripe; orange mascot if specified), NOT clothing or goggles. Warm soft matte 3D plush teaching illustration; ivory, sage, light wood, neutral grey; even soft daylight, mobile-friendly composition, key evidence in focus. Scene: University chemistry preparation room. Neatly spaced capped glass reagent bottles in a CLOSED glass-front cabinet, bottles plain and unlabelled, no mixing, no spill, no measurement. Blue fluffy mascot in white lab coat, safety glasses, closed shoes standing a step away with hands by sides, no chemical handling. On desk an open BLANK safety handbook. Neutral storage decision scene; no green/red answer encoding. Absolutely no letters, words, digits, Chinese text, watermark, answer marks or color-coded answers. Single scene, no collage. Blank documents/screens for programmatic overlays.",
+      "sha256": "71795415ad8f3633fe135c0824efcf401c3c149a5f0077bfe67da31756f85a03",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "biological",
+      "file": "web/assets/offline/biological.png",
+      "prompt": "Use case: scientific-educational. Create ONE 3:2 landscape campus safety teaching scene. Use reference for blue plush mascot identity only. Warm matte 3D plush style, ivory and sage palette, soft daylight. A university biology preparation room: blue navy fluffy cat-like mascot with cream muzzle wearing clean white lab coat, clear goggles, and closed shoes, hands lowered and not handling anything. Mascot stands one step away from a clean ENCLOSED biosafety cabinet with glass sash lowered and a few CLOSED sample tubes standing upright in a rack inside, all unlabeled. No active experiment, no microorganisms visible, no spills, no food, no gloves touching outside items. A wall-mounted handwashing sink far in background, no water flowing. Neutral readiness scene, not a correct/incorrect instruction. No letters, numbers, Chinese text, logos, tick/cross, watermark or color-coded answer. One scene, no collage.",
+      "sha256": "b8bcbad30a3ea42d1f95e4ea30c5107d19228ea930387b31c524b3208b4051e8",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "关键对象和状态可见；无答案结论文字。"
+      }
+    },
+    {
+      "id": "glass-options",
+      "file": "web/assets/offline/glass-options.png",
+      "prompt": "Use case: scientific-educational. One landscape 3:2 educational FOUR-OPTION comparison sheet, EXACTLY equal 2 by 2 panels, straight white dividers at exact half width and height, no other panels. Use blue fluffy mascot identity from attached atlas and warm soft matte 3D plush campus illustration. All panels same ivory sage neutral workbench, same mascot wearing sage sweatshirt, clean broken glass on a tray, matching camera/scale/lighting. Show FOUR physically different cleanup choices: TOP LEFT mascot using hand brush and dustpan to put clean broken glass into an ordinary thin black garbage bag in a small general trash can. TOP RIGHT mascot using a dustpan to put broken glass into a separate clearly thick-walled rigid grey safety collection container with broad opening, no thin bag. BOTTOM LEFT mascot reaching with bare blue furry paws toward loose broken glass, about to pick it up directly, NO INJURY, no blood, do not hold shards. BOTTOM RIGHT mascot tipping a folded paper packet of glass shards into a general waste bin containing paper tissues and food wrappers, so mixing waste is visible. AVOID any injury, spilt chemicals, gloves, words, labels, Chinese, letters, digits, ticks, crosses, green/red right-wrong coding, arrows, captions. Clear visible difference between rigid specialty collector and thin bag of mixed general waste. Each cell is one full scene. Do not add subpanels.",
+      "sha256": "6c280838e9e700a44941ecc59a7de9ee4694dc57be4c23cedbfb25b2639b5830",
+      "visualInspection": {
+        "checked": true,
+        "method": "实际图片逐张查看",
+        "note": "四格物理去向不同：普通袋、硬质容器、徒手接近、混合垃圾；按选项语义映射四格，不能固定正确字母。"
+      }
+    }
+  ]
+}

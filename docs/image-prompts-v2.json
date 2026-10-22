@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-09",
+  "tool": "built-in imagegen",
+  "items": [
+    {
+      "path": "prototype/assets/character-atlas.png",
+      "prompt": "Use case: scientific-educational character asset sheet. Create a single transparent-background sprite atlas exactly 1536x1024, arranged as three columns and two rows of equal 512x512 cells. No grid, no lines, no text, no background, no shadow outside characters. Every cell contains one fully visible full-body character centered with 12% transparent padding, same scale. TOP ROW: character identity from reference image (navy and cream dog, red nose, tan eyebrows), wearing buttoned white lab coat, clear safety goggles, blue gloves, dark closed shoes. Top left full front view; top middle three-quarter view facing left; top right full back view. BOTTOM ROW: a distinct friendly orange fox mascot, orange fur, cream muzzle and belly, dark ear tips, wearing exactly the same protective outfit. Bottom left full front view; bottom middle three-quarter view facing left; bottom right full back view. Both characters have neutral relaxed hands, no props, no cap. Polished matte plush 3D university educational illustration. All six figures are separate, fully contained in their equal cells, feet visible, no overlap. Reference image is ONLY the blue dog's identity and rendering style; do not reproduce its room.",
+      "transparent": true
+    },
+    {
+      "path": "prototype/assets/lab-scene.png",
+      "prompt": "Use case scientific-educational. One landscape 1536x1024 university laboratory teaching scene, polished soft 3D render, ivory sage-green and natural wood tones, similar cozy but professional lab illustration. NO PEOPLE, NO CHARACTERS. Scene must have three distinct readable zones: left 25% a stainless laboratory drying oven with closed glass door and small lit orange power indicator on the lab workbench; center 50% wide EMPTY foreground bench space, with one clear sample box at rear but plenty of room to composite a character in foreground; right 25% a wall mounted clipboard with two visibly blank checkboxes and blank lines but absolutely NO TEXT. Background window, cupboards and a clear exit doorway. No fire, smoke, injuries or danger spectacle. Eye level, deep enough view that oven and clipboard are visible simultaneously. No logos, labels, numbers, ticks, captions or text. This is a fictional teaching scenario about equipment left running without a clear handover, not reconstruction of an accident photograph. Composition should work with overlaid UI labels and numbered interactive spots added by code."
+    },
+    {
+      "path": "prototype/assets/transfer-blue.png",
+      "prompt": "Use case scientific-educational illustration. Reference 1 is character identity; reference 2 is lab style. Create a single polished 3D laboratory safety teaching scene with the navy-blue cream dog mascot from reference 1 wearing white buttoned lab coat, safety goggles and blue gloves. The mascot is at a lab sample reception bench, HOLDING a CLOSED neutral gray rigid sample carrier WITH BOTH GLOVED HANDS by the left and right sides, lowering it onto the table. Hands visibly wrap around the carrier sides; carrier overlaps part of torso, clear plausible contact, occlusion and cast shadows. No contents visible, no specific chemical, no claim this container suits all samples. A clipboard beside the carrier shows only blank lines, no writing. One other unmarked empty pouch lies to right on table. Face, upper body, both hands and carrier fully visible. Warm ivory and muted sage lab, composition centered. This image must demonstrate an object-interacting pose for later localized character replacement; keep background uncluttered. No text, no symbols, no correctness markers, no injuries, no flames, no watermarks. Landscape 1536x1024."
+    },
+    {
+      "path": "prototype/assets/transfer-fox.png",
+      "prompt": "Use case: identity-preserve localized character replacement. Edit IMAGE 1 as base. IMAGE 2 is identity reference ONLY: use the ORANGE FOX in bottom row, not the blue dog. Replace only the blue dog's head, visible fur and tail in IMAGE 1 with the orange fox identity: orange fur, cream muzzle, dark nose and ear tips. Preserve white lab coat, goggles, blue protective gloves, EXACT hand grip positions wrapping around left and right carrier edges, pose, size, gaze, expression. Preserve the rigid gray carrier pixel-faithfully, its lid, corners, clips, overlap with torso, all background, table, clipboard, pouch, lighting, shadows and camera. Pay particular attention to retaining correct finger-to-carrier contact and occlusion. This is a local redraw demonstration: do not redesign the room or carrier. No text, no new objects, no markings. Same 1536x1024 landscape.",
+      "kind": "reference-guided edit, no explicit pixel mask",
+      "retry": "Initial tool attempt failed HTTP 520; retry succeeded"
+    }
+  ]
+}

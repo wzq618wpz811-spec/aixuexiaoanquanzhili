@@ -33,6 +33,7 @@ if (-not [Uri]::TryCreate($imageEndpoint, [UriKind]::Absolute, [ref]$parsedEndpo
 $values['DASHSCOPE_IMAGE_URL'] = $imageEndpoint
 $values['DASHSCOPE_IMAGE_MODEL'] = 'qwen-image-2.1-turbo'
 $values['PORT'] = '4186'
+$values['TEACHER_PIN'] = '123456'
 $values['ENABLE_LIVE_GENERATION'] = '0'
 $deepseekKey = Read-Host 'DeepSeek API key (optional; Enter to keep existing)' -AsSecureString
 if ($deepseekKey.Length -gt 0) {
